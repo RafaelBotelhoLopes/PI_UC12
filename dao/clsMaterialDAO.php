@@ -9,8 +9,9 @@
 class MaterialDAO {
     
     public static function inserir( $material ){
-        $sql = "INSERT INTO materiais ( nome ) VALUES "
-                . " ( '".$material->getNome()."' ); ";
+        $sql = "INSERT INTO materiais ( nome, qtdEstoque ) VALUES "
+                . " ( '".$material->getNome()."' , "
+                . "  '".$material->getQtdEstoque()."' ); ";
         Conexao::executar($sql);
         
     }

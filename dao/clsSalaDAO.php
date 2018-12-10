@@ -25,31 +25,18 @@ class SalaDAO {
     }
     
     public static function getSalas(){
-        $sql = "SELECT id, numero, descricao FROM salas ORDER BY numero";
+        $sql = "SELECT codigo, numero, descricao FROM salas ORDER BY numero";
         $result = Conexao::consultar($sql);
         $lista = new ArrayObject();
         if( $result != NULL ){
             while( list($_id, $_numero, $_descricao) = mysqli_fetch_row($result) ){
                 $sala = new Sala();
-                $Sala->setId($_id);
+                $Sala->setCodigo($_id);
                 $sala->setNumero($_numero);
                 $sala->setDescricao($_descricao);
                 $lista->append($sala);
             }
         }
         return $lista;
-    }
-    
-    
+    }    
 }
-
-
-
-
-
-
-
-
-
-
-

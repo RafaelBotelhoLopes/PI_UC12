@@ -24,7 +24,7 @@ class UsuarioDAO {
                 . " email =      '".$usuario->getCpf()."' , "
                 . " senha =    '".$usuario->getEmail()."' , "
                 . " admin =    ".$usuario->getAdmin()."  "
-                . " WHERE id = ".$usuario->getId();
+                . " WHERE codigo = ".$usuario->getId();
         
         Conexao::executar( $sql );
     }
@@ -32,16 +32,16 @@ class UsuarioDAO {
     
     public static function excluir($usuario){
         $sql = "DELETE FROM usuarios "
-             . " WHERE id =  ".$usuario->getId();
+             . " WHERE codigo =  ".$usuario->getId();
         
         Conexao::executar( $sql );
     }
     
     public static function getUsuarios(){
-        $sql = " SELECT id, nomeCompleto, nomeUsuario, email,"
+        $sql = " SELECT codigo, nomeCompleto, nomeUsuario, email,"
              . " senha , admin "
              . " FROM usuarios  "
-             . " ORDER BY c.nome ";
+             . " ORDER BY nome ";
         
         $result = Conexao::consultar($sql);
         $lista = new ArrayObject();
@@ -106,19 +106,5 @@ class UsuarioDAO {
             return NULL;
         }
         
-    }
-   
-    
+    }    
 }
-
-
-
-
-
-
-
-
-
-
-
-

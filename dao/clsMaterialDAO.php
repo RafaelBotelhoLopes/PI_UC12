@@ -1,10 +1,5 @@
 <?php
-/**
- * Description of clsCidadeDAO
- *
- * @author assparremberger
- * 26/10/2018
- */
+
 
 class MaterialDAO {
     
@@ -43,6 +38,8 @@ class MaterialDAO {
         }
         return $lista;
     }
+    
+    
     
     
 }

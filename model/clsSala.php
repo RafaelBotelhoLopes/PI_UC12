@@ -2,11 +2,12 @@
 
 class Sala{
     private $codigo;
-    private $numero;
+    private $numero, $descricao;
     
-    function __construct($codigo, $numero) {
+    function __construct($codigo = NULL, $numero = NULL, $descricao = NULL) {
         $this->codigo = $codigo;
         $this->numero = $numero;
+        $this->descricao = $descricao;
     }
     
     function getCodigo() {
@@ -24,5 +25,12 @@ class Sala{
     function setNumero($numero) {
         $this->numero = $numero;
     }
+    function getDescricao() {
+        return $this->descricao;
+    }
 
+    function setDescricao($descricao) {
+        $this->descricao = $descricao;
+    }
+    
 }

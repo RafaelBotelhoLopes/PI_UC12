@@ -23,7 +23,7 @@
     | 
     <form action="entrar.php" method="POST" >
         <input type="text" name="txtLogin" required
-               placeholder="E-mail ou CPF: " />
+               placeholder="E-mail: " />
         
         <input type="password" name="txtSenha"
                placeholder="Senha: " required />

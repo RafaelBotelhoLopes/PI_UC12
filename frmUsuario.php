@@ -1,30 +1,24 @@
 <?php
     
-    include_once 'model/clsUsuario.php';
-    
+    include_once 'model/clsUsuario.php';    
     include_once 'dao/clsUsuarioDAO.php';
     include_once 'dao/clsConexao.php';
    
     session_start();
     
-    $nome = "";
-    
-    $email = "";
-    
-    $admin = 0;
-    
-    $foto = "sem_foto.png";
+    $nome = "";    
+    $nomeUsuario = "";    
+    $email = "";    
+    $admin = 0;    
     $action = "inserir";
     
     if( isset($_REQUEST['editar']) ){
         $id = $_REQUEST['idUsuario'];
-        $usuario = UsuarioDAO::getUsuarioById($id);
-        $nome = $usuario->getNome();
-        $email = $usuario->getEmail();
-        
-        $admin = $usuario->getAdmin();
-        $foto = $usuario->getFoto();
-       
+        $usuario = UsuarioDAO::getUsuarioById($codigo);
+        $nome = $usuario->getNomeCompleto();
+        $nomeUsuario = $usuario->getNomeUsuario();
+        $email = $usuario->getEmail();        
+        $admin = $usuario->getAdmin();       
         $action = "editar&idUsuario=".$usuario->getId();
     }
     
@@ -60,25 +54,18 @@
                 }
             ?>
             
-            <label>Nome: </label>
+            <label>Nome Completo: </label>
             <input type="text" name="txtNome" value="<?php echo $nome; ?>" required maxlength="100" /> <br><br>
+            
+            <label>Nome de Usuário: </label>
+            <input type="text" name="txtNomeUsuario" value="<?php echo $nomeUsuario; ?>" required maxlength="100" /> <br><br>
             
             <label>E-mail: </label>
             <input type="email" name="txtEmail" value="<?php echo $email; ?>" required /> <br><br>
        
             
             <br><br>
-  
            
-            <label>Foto: </label>
-            
-            <?php 
-                if( isset($_REQUEST['editar'])){
-                    echo '<img src="fotos_usuarios/'.$foto.'" width="30px" />';
-                }
-            ?>
-            
-            <input type="file" name="foto" /> <br><br>
             <?php
                 if( !isset( $_REQUEST['editar'] )){
             ?>

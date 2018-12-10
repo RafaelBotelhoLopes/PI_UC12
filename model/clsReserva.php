@@ -5,18 +5,18 @@ class Reserva {
     private $codUsuario;
     private $codSala;
     private $codMaterial;
-    private $quantidadeMaterial;
-    private $horarioInicio;
-    private $horarioFim;
+    private $qtdMaterial;
+    private $dataInicial;
+    private $dataFinal;
     
-    function __construct($codigo, $codUsuario, $codSala, $codMaterial, $quantidadeMaterial, $horarioInicio, $horarioFim) {
+    function __construct($codigo, $codUsuario, $codSala, $codMaterial, $qtdMaterial, $dataInicial, $dataFinal) {
         $this->codigo = $codigo;
         $this->codUsuario = $codUsuario;
         $this->codSala = $codSala;
         $this->codMaterial = $codMaterial;
-        $this->quantidadeMaterial = $quantidadeMaterial;
-        $this->horarioInicio = $horarioInicio;
-        $this->horarioFim = $horarioFim;
+        $this->qtdMaterial = $qtdMaterial;
+        $this->dataInicial = $dataInicial;
+        $this->dataFinal = $dataFinal;
     }
 
     function getCodigo() {
@@ -35,16 +35,16 @@ class Reserva {
         return $this->codMaterial;
     }
 
-    function getQuantidadeMaterial() {
-        return $this->quantidadeMaterial;
+    function getQtdMaterial() {
+        return $this->qtdMaterial;
     }
 
-    function getHorarioInicio() {
-        return $this->horarioInicio;
+    function getDaraInicial() {
+        return $this->dataInicial;
     }
 
-    function getHorarioFim() {
-        return $this->horarioFim;
+    function getDataFinal() {
+        return $this->dataFinal;
     }
 
     function setCodigo($codigo) {
@@ -63,16 +63,16 @@ class Reserva {
         $this->codMaterial = $codMaterial;
     }
 
-    function setQuantidadeMaterial($quantidadeMaterial) {
-        $this->quantidadeMaterial = $quantidadeMaterial;
+    function setQtdMaterial($qtdMaterial) {
+        $this->qtdMaterial = $qtdMaterial;
     }
 
-    function setHorarioInicio($horarioInicio) {
-        $this->horarioInicio = $horarioInicio;
+    function setDataInicial($dataInicial) {
+        $this->dataInicial = $dataInicial;
     }
 
-    function setHorarioFim($horarioFim) {
-        $this->horarioFim = $horarioFim;
+    function setDataFinal($dataFinal) {
+        $this->dataFinal = $dataFinal;
     }
 
 }

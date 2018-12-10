@@ -94,10 +94,12 @@ class UsuarioDAO {
         
         if( mysqli_num_rows( $result ) > 0 ){
             $dados = mysqli_fetch_assoc( $result );
-            $usuario = new Cliente();
-            $usuario->setId( $dados['id'] );
-            $usuario->setNome( $dados['nome'] );
-            $usuario->setFoto( $dados['foto'] );
+            $usuario = new Usuario();
+            $usuario->setId( $dados['codigo'] );
+            $usuario->setNomeCompleto( $dados['nomeCompleto'] );
+            $usuario->setNomeUsuario( $dados['nomeUsuario'] );
+            $usuario->setEmail( $dados['email'] );
+            $usuario->setSenha( $dados['senha'] );
             $usuario->setAdmin( $dados['admin'] );
             return $usuario;
         } else {

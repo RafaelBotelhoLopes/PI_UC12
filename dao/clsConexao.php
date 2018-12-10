@@ -10,7 +10,7 @@ class Conexao {
     
     private static function abrir(){
         $banco = "m171_04_projeto_integrador_prime";
-        $local = "localhost";
+        $local = "senacinfo-db";
         $usuario = "root";
         $senha = "";
         

@@ -11,8 +11,8 @@ class Conexao {
     private static function abrir(){
         $banco = "m171_04_projeto_integrador_prime";
         $local = "senacinfo-db";
-        $usuario = "root";
-        $senha = "";
+        $usuario = "inf_m171";
+        $senha = "senacrs";
         
         $conn = mysqli_connect($local, $usuario, $senha, $banco);
         

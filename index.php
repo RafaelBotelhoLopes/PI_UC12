@@ -15,7 +15,10 @@
         <h1 align="center">Bem-vindo Programa de Reserva </h1>
         
         <?php
-            
+            include_once './dao/clsReservaDAO.php';
+            include_once './dao/clsConexao.php';
+        
+        
             $lista = ReservaDAO::getReservas();
             
             if( count($lista) == 0 ){

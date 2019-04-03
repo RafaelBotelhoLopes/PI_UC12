@@ -41,7 +41,7 @@ class ReservaDAO {
     }
     
     public static function getReservas (){
-        $sql = " SELECT r.codigo, r.qtdMaterial, r.dataInicial, r.dataFinal, u.codigo, u.nome, s.codigo, s.numero, m.codigo, m.nome "
+        $sql = " SELECT r.codigo, r.qtdMaterial, r.dataInicial, r.dataFinal, u.codigo, u.nomeCompleto, s.codigo, s.numero, m.codigo, m.nome "
              . " FROM reservas r "
              . " INNER JOIN usuarios u ON r.codUsuario = u.codigo "
              . " INNER JOIN salas s ON r.codSala = s.codigo "

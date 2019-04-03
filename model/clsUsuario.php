@@ -1,13 +1,13 @@
 <?php
 
 
-class Cliente {
-    private $codigo, $nomeCompleto, $nomeUsuario,
+class Usuario {
+    private $id, $nomeCompleto, $nomeUsuario,
             $email,  $senha,  $admin;
     
     function __construct($codigo = NULL, $nomeCompleto = NULL, $nomeUsuario = NULL, $email = NULL, $senha = NULL, $admin = NULL) {
         
-        $this->codigo = $codigo;
+        $this->id = $codigo;
         $this->nomeCompleto = $nomeCompleto;
         $this->nomeUsuario = $nomeUsuario;
         $this->email = $email;
@@ -15,8 +15,8 @@ class Cliente {
         $this->admin = $admin;
     }
 
-    function getCodigo() {
-        return $this->codigo;
+    function getId() {
+        return $this->id;
     }
 
     function getNomeCompleto() {
@@ -39,8 +39,8 @@ class Cliente {
         return $this->admin;
     }
 
-    function setCodigo($codigo) {
-        $this->codigo = $codigo;
+    function setId($codigo) {
+        $this->id = $codigo;
     }
 
     function setNomeCompleto($nomeCompleto) {

@@ -6,7 +6,7 @@
 
     $login = $_POST['txtLogin'];
     $senha = $_POST['txtSenha'];
-    $senha = md5($senha);
+//    $senha = md5($senha);
     
     $usuario = UsuarioDAO::logar($login, $senha);
     
@@ -16,12 +16,10 @@
         session_start();
         $_SESSION['logado'] = TRUE;
         $_SESSION['idUsuario'] = $usuario->getId();
-        $_SESSION['nome'] = $usuario->getNome();
-        $_SESSION['foto'] = $usuario->getFoto();
+        $_SESSION['nome'] = $usuario->getNomeCompleto();
         $_SESSION['admin'] = $usuario->getAdmin();
         
-        
-        
+               
         header("Location: ".$_SERVER['HTTP_REFERER']);
     }
     

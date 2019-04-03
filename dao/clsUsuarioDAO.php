@@ -24,7 +24,7 @@ class UsuarioDAO {
                 . " email =      '".$usuario->getEmail()."' , "
                 . " senha =    '".$usuario->getSenha()."' , "
                 . " admin =    ".$usuario->getAdmin()."  "
-                . " WHERE codigo = ".$usuario->getCodigo();
+                . " WHERE codigo = ".$usuario->getId();
         
         Conexao::executar( $sql );
     }
@@ -32,7 +32,7 @@ class UsuarioDAO {
     
     public static function excluir($usuario){
         $sql = "DELETE FROM usuarios "
-             . " WHERE codigo =  ".$usuario->getCodigo();
+             . " WHERE codigo =  ".$usuario->getId();
         
         Conexao::executar( $sql );
     }
@@ -49,7 +49,7 @@ class UsuarioDAO {
             $senha, $admin) = mysqli_fetch_row($result) ){
             
             $usuario = new Usuario();
-            $usuario->setCodigo($cod);
+            $usuario->setId($cod);
             $usuario->setNomeCompleto($nomeCompleto);
             $usuario->setNomeUsuario($nomeUsuario);
             $usuario->setEmail($mail);
@@ -75,7 +75,7 @@ class UsuarioDAO {
         list( $cod, $nomeCompleto, $nomeUsuario, $email,
             $senha, $admin) = mysqli_fetch_row($result);
             $usuario = new Usuario();
-            $usuario->setCodigo($cod);
+            $usuario->setId($cod);
             $usuario->setNomeCompleto($nomeCompleto);
             $usuario->setNomeUsuario($nomeUsuario);
             $usuario->setEmail($mail);
@@ -86,9 +86,9 @@ class UsuarioDAO {
     }
   
     public static function logar($login, $senha){
-        $sql = " SELECT codigo, nomeCompleto, nomeUsuario, senha, admin "
+        $sql = " SELECT codigo, nomeCompleto, nomeUsuario, email, senha, admin "
              . " FROM usuarios "
-             . " WHERE ( nomeUsuario = '".$login."')  "
+             . " WHERE ( nomeUsuario = '".$login."' OR email = '".$login."')  "
              . "     AND senha = '".$senha."'    ";
         $result = Conexao::consultar($sql);
         

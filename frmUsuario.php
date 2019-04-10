@@ -14,7 +14,7 @@
     
     if( isset($_REQUEST['editar']) ){
         $id = $_REQUEST['idUsuario'];
-        $usuario = UsuarioDAO::getUsuarioById($codigo);
+        $usuario = UsuarioDAO::getUsuarioById($id);        
         $nome = $usuario->getNomeCompleto();
         $nomeUsuario = $usuario->getNomeUsuario();
         $email = $usuario->getEmail();        
@@ -55,7 +55,7 @@
             ?>
             
             <label>Nome Completo: </label>
-            <input type="text" name="txtNome" value="<?php echo $nome; ?>" required maxlength="100" /> <br><br>
+            <input type="text" name="txtNomeCompleto" value="<?php echo $nome; ?>" required maxlength="100" /> <br><br>
             
             <label>Nome de Usuário: </label>
             <input type="text" name="txtNomeUsuario" value="<?php echo $nomeUsuario; ?>" required maxlength="100" /> <br><br>

@@ -5,7 +5,7 @@ class Usuario {
     private $id, $nomeCompleto, $nomeUsuario,
             $email,  $senha,  $admin;
     
-    function __construct($codigo = NULL, $nomeCompleto = NULL, $nomeUsuario = NULL, $email = NULL, $senha = NULL, $admin = NULL) {
+    function __construct($codigo = NULL, $nomeCompleto = NULL, $nomeUsuario = NULL, $email = NULL, $senha = NULL, $admin = 0) {
         
         $this->id = $codigo;
         $this->nomeCompleto = $nomeCompleto;

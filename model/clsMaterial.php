@@ -5,7 +5,7 @@ class Material{
     private $nome;
     private $quantidadeEstoque;
     
-    function __construct($codigo, $nome, $quantidadeEstoque) {
+    function __construct($codigo = NULL, $nome = NULL, $quantidadeEstoque = NULL) {
         $this->codigo = $codigo;
         $this->nome = $nome;
         $this->quantidadeEstoque = $quantidadeEstoque;

@@ -16,7 +16,7 @@
         <title>Projeto M171 - Reservar</title>
     </head>
         <?php
-           // include_once 'menu.php';
+            include_once 'menu.php';
         ?>
     
         <h1 align="center">Reservar  Sala / Material</h1>
@@ -65,7 +65,7 @@
      
      
               <label>Dia da reserva: </label>
-              <input type="datetime-local" name="data"><br><br>
+              <input type="date" name="data"><br><br>
             
             
         

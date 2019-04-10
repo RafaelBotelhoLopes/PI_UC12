@@ -41,18 +41,17 @@ class UsuarioDAO {
         $sql = " SELECT codigo, nomeCompleto, nomeUsuario, email,"
              . " senha , admin "
              . " FROM usuarios  "
-             . " ORDER BY nome ";
+             . " ORDER BY nomeCompleto ";
         
         $result = Conexao::consultar($sql);
         $lista = new ArrayObject();
-        while( list( $cod, $nomeCompleto, $nomeUsuario, $email,
-            $senha, $admin) = mysqli_fetch_row($result) ){
+        while( list( $cod, $nomeCompleto, $nomeUsuario, $email, $senha, $admin) = mysqli_fetch_row($result) ){
             
             $usuario = new Usuario();
             $usuario->setId($cod);
             $usuario->setNomeCompleto($nomeCompleto);
             $usuario->setNomeUsuario($nomeUsuario);
-            $usuario->setEmail($mail);
+            $usuario->setEmail($email);
             $usuario->setSenha($senha);
             $usuario->setAdmin($admin);
   
@@ -67,18 +66,16 @@ class UsuarioDAO {
         $sql = " SELECT codigo, nomeCompleto, nomeUsuario, "
              . " email, senha, admin "
              . " FROM usuarios "
-             . " WHERE codigo = ".$codigo
-             . " ORDER BY nome ";
+             . " WHERE codigo = ".$codigo;
         
         $result = Conexao::consultar($sql);
       
-        list( $cod, $nomeCompleto, $nomeUsuario, $email,
-            $senha, $admin) = mysqli_fetch_row($result);
+        list( $cod, $nomeCompleto, $nomeUsuario, $email, $senha, $admin) = mysqli_fetch_row($result);
             $usuario = new Usuario();
             $usuario->setId($cod);
             $usuario->setNomeCompleto($nomeCompleto);
             $usuario->setNomeUsuario($nomeUsuario);
-            $usuario->setEmail($mail);
+            $usuario->setEmail($email);
             $usuario->setSenha($senha);
             $usuario->setAdmin($admin);
             

@@ -9,7 +9,7 @@ class Reserva {
     private $dataInicial;
     private $dataFinal;
     
-    function __construct($codigo, $codUsuario, $codSala, $codMaterial, $qtdMaterial, $dataInicial, $dataFinal) {
+    function __construct($codigo = NULL, $codUsuario = NULL, $codSala = NULL, $codMaterial = NULL, $qtdMaterial = NULL, $dataInicial = NULL, $dataFinal = NULL) {
         $this->codigo = $codigo;
         $this->codUsuario = $codUsuario;
         $this->codSala = $codSala;

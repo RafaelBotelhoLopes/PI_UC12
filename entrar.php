@@ -6,7 +6,7 @@
 
     $login = $_POST['txtLogin'];
     $senha = $_POST['txtSenha'];
-//    $senha = md5($senha);
+    $senha = md5($senha);
     
     $usuario = UsuarioDAO::logar($login, $senha);
     
@@ -23,13 +23,3 @@
         header("Location: ".$_SERVER['HTTP_REFERER']);
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-

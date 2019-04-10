@@ -19,7 +19,7 @@
         
         <br><br><br>
         
-        <a href="frmCliente.php">
+        <a href="frmUsuario.php">
             <button>Cadastrar novo usuário</button></a>
         
         <br><br>
@@ -36,25 +36,29 @@
                 <th>Código</th>
                 <th>Nome Completo</th>
                 <th>Nome de Usuario</th>               
-                <th>E-mail</th>               
-                <th>Editar</th>
-                <th>Excluir</th>
+                <th>E-mail</th> 
+            <?php    
+            if( isset( $_SESSION['admin']) && $_SESSION['admin'] ){     
+                echo ' <th>Editar</th>
+                <th>Excluir</th>';
+            }
+            ?>
             </tr>
             
             <?php
                     foreach ($lista as $user){
                         echo '<tr> ';
-                        echo '   <td>'.$user->getCodigo().'</td>';
+                        echo '   <td>'.$user->getId().'</td>';
                         echo '   <td>'.$user->getNomeCompleto().'</td>';
                         echo '   <td>'.$user->getNomeUsuario().'</td>';
                         echo '   <td>'.$user->getEmail().'</td>';
                         
                         
-                        
-                        echo '   <td><a href="frmUsuario.php?editar&idUsuario='.$user->getCodigo().'" ><button>Editar</button></a></td>';
-                        echo '   <td><a href="controller/salvarUsuario.php?excluir&idUsuario='.$user->getCodigo().'" ><button>Excluir</button></a></td>';
+            if( isset( $_SESSION['admin']) && $_SESSION['admin'] ){            
+                        echo '   <td><a href="frmUsuario.php?editar&idUsuario='.$user->getId().'" ><button>Editar</button></a></td>';
+                        echo '   <td><a href="controller/salvarUsuario.php?excluir&idUsuario='.$user->getId().'" ><button>Excluir</button></a></td>';
                         echo '</tr>';
-                        
+            }    
                     }
             ?>
             

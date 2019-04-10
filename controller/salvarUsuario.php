@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 include_once '../model/clsUsuario.php';
 include_once '../dao/clsUsuarioDAO.php';
 include_once '../dao/clsConexao.php';
@@ -25,8 +27,15 @@ if( isset($_REQUEST['inserir'])  ){
                
         $senha = md5($senha);
         $usuario->setSenha( $senha );        
-        UsuarioDAO::inserir( $usuario );        
-        header("Location: ../usuario.php");
+        UsuarioDAO::inserir( $usuario );       
+
+        if( isset( $_SESSION['admin'] ) && $_SESSION['admin'] == 1 ){            
+            header("Location: ../usuario.php");
+        }else{
+            header("Location: ../index.php");
+
+        }
+    
     }   
 }
 
@@ -35,7 +44,7 @@ if( isset($_REQUEST['inserir'])  ){
 if( isset($_REQUEST['editar'])){
     
     $id = $_REQUEST['idUsuario'];
-    $usuario = UsuarioDAO::getUsuarioById($codigo);
+    $usuario = UsuarioDAO::getUsuarioById($id);
       
     $usuario->setNomeCompleto( $_POST['txtNomeCompleto'] );
     $usuario->setNomeUsuario( $_POST['txtNomeUsuario'] );

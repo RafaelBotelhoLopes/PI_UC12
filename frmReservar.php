@@ -14,7 +14,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Projeto M171 - Reservar</title>
-        
+        <link href="estilo.css" rel="stylesheet" type="text/css" />
+
     </head>
         <?php
             include_once 'menu.php';

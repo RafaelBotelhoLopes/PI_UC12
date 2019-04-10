@@ -8,6 +8,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Prime - Reservas do Usuário</title>  
+        <link href="estilo.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <?php

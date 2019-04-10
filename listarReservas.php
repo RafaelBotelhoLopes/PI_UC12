@@ -22,6 +22,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Market M171 - Pedidos</title>
+        <link href="estilo.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <?php

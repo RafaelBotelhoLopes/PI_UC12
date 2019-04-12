@@ -61,28 +61,68 @@ th{
     color: black;
 }
 
-.btnMenu{
+.btnMenu{   
+     width: 50;
+    /*height: 200;*/
+/*    padding: 3px;*/
+    margin: 0.5px 0;
+    border: solid 5px none;
+/*    border-radius: 10px;*/
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
     
+
+    
+}
+
+#foto{
+    width: 50px;
 }
 
 .btnCadastrarUsuario{
-    
+          width: 10;
+    /*height: 200;*/
+/*    padding: 3px;*/
+    margin: 0.5px 0;
+    border: solid 5px none;
+    /*border-radius: 10px;*/
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#materialsala , #cadastrar, #usuarios, #sair, #limpar{
+       width: 10;
+    /*height: 200;*/
+/*    padding: 3px;*/
+    margin: 0.5px 0;
+    border: solid 5px none;
+/*    border-radius: 10px;*/
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 input[type=submit]{
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 10px;
+    width: 10;
+    /*height: 200;*/
+/*    padding: 3px;*/
+    margin: 0.5px 0;
+    border: solid 5px none;
+    /*border-radius: 10px;*/
     background-color: #5b5;
     color: white;
-    font-size: 30px;
+    font-size: 15px;
     cursor: pointer;
 }
 input[type=submit]:hover{
     background-color: #4a5;
 }
+
 
 
 

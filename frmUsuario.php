@@ -81,7 +81,11 @@
                 }
             ?>
             <input type="submit" value="Salvar" />
+<<<<<<< HEAD
             <input type="reset" value="Limpar" />
+=======
+            <input id="limpar" type="reset" value="Limpar" />
+>>>>>>> origin/master
             
             
         </form>

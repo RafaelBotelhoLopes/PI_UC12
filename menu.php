@@ -21,7 +21,7 @@
           echo '<a href="sair.php"><button>Sair</button></a>';
           if( isset( $_SESSION['admin']) && $_SESSION['admin'] == TRUE){
               
-            echo '<button class="menu">Cadastrar Material / Sala</button>';
+            echo '<a href="CadMatSala.php"><button class="menu">Cadastrar Material / Sala</button></a>';
             echo '<a class="menu" href="frmUsuario.php">
             <button>Cadastrar</button></a>
             <a class="menu" href="usuario.php">

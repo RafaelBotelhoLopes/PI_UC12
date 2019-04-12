@@ -9,6 +9,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Programa de Reserva - Usuarios</title>
+        <link href="estilo.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <?php
@@ -20,7 +21,7 @@
         <br><br><br>
         
         <a href="frmUsuario.php">
-            <button>Cadastrar novo usuário</button></a>
+            <button class="btnCadastrarUsuario">Cadastrar novo usuário</button></a>
         
         <br><br>
         <?php
@@ -55,8 +56,8 @@
                         
                         
             if( isset( $_SESSION['admin']) && $_SESSION['admin'] ){            
-                        echo '   <td><a href="frmUsuario.php?editar&idUsuario='.$user->getId().'" ><button>Editar</button></a></td>';
-                        echo '   <td><a href="controller/salvarUsuario.php?excluir&idUsuario='.$user->getId().'" ><button>Excluir</button></a></td>';
+                        echo '   <td><a href="frmUsuario.php?editar&idUsuario='.$user->getId().'" ><button class="btnEditar">Editar</button></a></td>';
+                        echo '   <td><a href="controller/salvarUsuario.php?excluir&idUsuario='.$user->getId().'" ><button class="btnExcluir">Excluir</button></a></td>';
                         echo '</tr>';
             }    
                     }

@@ -6,7 +6,7 @@
 
 <div id="menu">
     <a class="menu" href="index.php">
-        <button>Início</button></a>
+        <button class="btnMenu">Início</button></a>
     
     
     <?php
@@ -14,7 +14,7 @@
                   $_SESSION['logado'] == TRUE ) {
     ?>
     <a class="menu" href="frmReservar.php">
-            <button>Reservar</button></a>
+        <button class="btnMenu">Reservar</button></a>
         
    <?php
           echo 'Olá, '.$_SESSION['nome'];
@@ -41,7 +41,7 @@
     </form> 
     
     <a class="menu" href="frmUsuario.php">
-            <button>Cadastre-se</button></a>
+            <button class="btnMenu">Cadastre-se</button></a>
     
     <?php
         

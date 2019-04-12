@@ -26,7 +26,7 @@ if ( isset($_REQUEST['inserir']) ){
         $reserva->setCodUsuario($usuario);
         $reserva->setCodMaterial($material);
         $reserva->setCodSala($sala);
-        $reserva->setQtdMaterial($qtdMaterial);                
+        $reserva->setQuantidadeMaterial($qtdMaterial);                
         $reserva->setDataInicial($dataInicial);
         $reserva->setDataFinal($dataFinal);
         

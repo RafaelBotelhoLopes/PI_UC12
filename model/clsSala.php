@@ -18,16 +18,17 @@ class Sala{
         return $this->numero;
     }
 
-    function setCodigo($codigo) {
-        $this->codigo = $codigo;
-    }
-
-    function setNumero($numero) {
-        $this->numero = $numero;
-    }
     function getDescricao() {
         return $this->descricao;
     }
+    
+    function setCodigo($codigo) {
+        $this->codigo = $codigo;
+    }  
+
+    function setNumero($numero) {
+        $this->numero = $numero;
+    }    
 
     function setDescricao($descricao) {
         $this->descricao = $descricao;

@@ -6,7 +6,7 @@ class MaterialDAO {
     public static function inserir( $material ){
         $sql = "INSERT INTO materiais ( nome, qtdEstoque ) VALUES "
                 . " ( '".$material->getNome()."' , "
-                . "  '".$material->getQtdEstoque()."' ); ";
+                . "  '".$material->getQuantidadeEstoque()."' ); ";
         Conexao::executar($sql);
         
     }
@@ -14,7 +14,7 @@ class MaterialDAO {
     public static function editar( $material ){
         $sql =    "UPDATE materiais SET "
                 . " nome = '".$material->getNome()."' , "
-                . " qtdEstoque = '".$material->getQtdEstoque()."'  "
+                . " qtdEstoque = '".$material->getQuantidadeEstoque()."'  "
                 . " WHERE codigo = ".$material->getCodigo();
         Conexao::executar($sql);
         
@@ -33,9 +33,9 @@ class MaterialDAO {
         if( $result != NULL ){
             while( list($_cod, $_nome, $_qtdEstoque) = mysqli_fetch_row($result) ){
                 $material = new Material();
-                $material->setId($_cod);
+                $material->setCodigo($_cod);
                 $material->setNome($_nome);
-                $material->setqtdEstoque($_qtdEstoque);
+                $material->setQuantidadeEstoque($_qtdEstoque);
                 $lista->append($material);
             }
         }

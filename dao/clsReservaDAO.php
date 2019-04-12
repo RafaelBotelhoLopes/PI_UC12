@@ -8,7 +8,7 @@ class ReservaDAO {
              . "  ".$reserva->getUsuario()->getCodigo()." , "
              . "  ".$reserva->getSala()->getCodigo()." , "
              . "  ".$reserva->getMaterial()->getCodigo()." , "
-             . "  '".$reserva->getQtdMaterial()."' , "
+             . "  '".$reserva->getQuantidadeMaterial()."' , "
              . "  '".$reserva->getDataInicial()."' , "
              . "  '".$reserva->getDataFinal()."' "
              . " );";
@@ -21,7 +21,7 @@ class ReservaDAO {
         $sql = " UPDATE reservas SET "
              . " codSala  = ".$reserva->getSala()->getCodigo()." , "
              . " codMaterial  = ".$reserva->getMaterial()->getCodigo()." , "
-             . " qtdMaterial  = '".$reserva->getQtdMaterial()."' , "
+             . " qtdMaterial  = '".$reserva->getQuantidadeMaterial()."' , "
              . " dataInicial  = '".$reserva->getDataInicial()."' , "
              . " dataFinal  = '".$reserva->getDataFinal();
         
@@ -65,7 +65,7 @@ class ReservaDAO {
             
             $reserva = new Reserva();
             $reserva->setCodigo($cod);
-            $reserva->setQtdMaterial($qtdM);
+            $reserva->setQuantidadeMaterial($qtdM);
             $reserva->setDataInicial($dataI);
             $reserva->setDataFinal($dataF);
             $reserva->setCodUsuario($usuario);

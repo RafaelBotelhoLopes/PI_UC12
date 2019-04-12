@@ -6,6 +6,10 @@
     include_once 'dao/clsMaterialDAO.php';
     include_once 'dao/clsReservaDAO.php';
     include_once 'dao/clsSalaDAO.php';
+    
+    $idMaterial = 0;
+    $idSala = 0;
+    
 
 ?>
 
@@ -19,6 +23,9 @@
     </head>
         <?php
             include_once 'menu.php';
+           
+              
+            
         ?>
     
         <h1 align="center">Reservar  Sala / Material</h1>
@@ -35,11 +42,11 @@
                     $lista = MaterialDAO::getMateriais();
                     foreach ($lista as $material){
                         $selecionar = "";
-                        if($idMaterial == $material->getId()){
+                        if($idMaterial == $material->getCodigo()){
                             $selecionar = "selected";
                             
                         }
-                        echo '<option '.$selecionar.' value="'.$material->getId().'" >'.$material->getNome().'</option>';
+                        echo '<option '.$selecionar.' value="'.$material->getCodigo().'" >'.$material->getNome().'</option>';
                         
                     }
                 ?>
@@ -54,11 +61,11 @@
                     $lista = SalaDAO::getSalas();
                     foreach ($lista as $sala){
                         $selecionar = "";
-                        if($idSala == $sala->getId()){
+                        if($idSala == $sala->getCodigo()){
                             $selecionar = "selected";
                             
                         }
-                        echo '<option '.$selecionar.' value="'.$sala->getId().'" >'.$sala->getNome().'</option>';
+                        echo '<option '.$selecionar.' value="'.$sala->getCodigo().'" >'.$sala->getDescricao().'</option>';
                         
                     }
                 ?>

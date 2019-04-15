@@ -33,5 +33,5 @@ class Sala{
     function setDescricao($descricao) {
         $this->descricao = $descricao;
     }
-    
+
 }

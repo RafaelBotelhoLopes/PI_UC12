@@ -5,6 +5,13 @@
 ?>
 
 <div id="menu">
+    
+
+
+     <img id="foto" src="imagens/dog.jpg" alt="Insta"  />                   
+
+   
+    
     <a class="menu" href="index.php">
         <button class="btnMenu">Início</button></a>
     
@@ -18,14 +25,14 @@
         
    <?php
           echo 'Olá, '.$_SESSION['nome'];
-          echo '<a href="sair.php"><button>Sair</button></a>';
+          echo '<a href="sair.php"><button id="sair">Sair</button></a>';
           if( isset( $_SESSION['admin']) && $_SESSION['admin'] == TRUE){
               
-            echo '<a href="CadMatSala.php"><button class="menu">Cadastrar Material / Sala</button></a>';
+            echo '<button class="menu" id="materialsala">Cadastrar Material / Sala</button>';
             echo '<a class="menu" href="frmUsuario.php">
-            <button>Cadastrar</button></a>
+            <button id="cadastrar">Cadastrar</button></a>
             <a class="menu" href="usuario.php">
-            <button>Usuários</button></a>';
+            <button id="usuarios">Usuários</button></a>';
             
         }
         }else{
@@ -56,10 +63,18 @@
     #frmMenu{
         float: left;
     }
-    .menu{
+/*    .menu{
         float: left;
+    }*/
+    #menu img{
+        float: left;
+        margin-left: 5px;
+        
+    }
+    #menu a{
+        float: left;
+        margin-left: 5px;
+        
     }
 </style>
-
-
 

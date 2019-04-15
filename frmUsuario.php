@@ -81,7 +81,9 @@
                 }
             ?>
             <input type="submit" value="Salvar" />
-            <input type="reset" value="Limpar" />
+
+            <input id="limpar" type="reset" value="Limpar" />
+
             
             
         </form>

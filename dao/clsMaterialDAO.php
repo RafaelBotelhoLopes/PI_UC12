@@ -1,6 +1,5 @@
 <?php
 
-
 class MaterialDAO {
     
     public static function inserir( $material ){
@@ -43,9 +42,8 @@ class MaterialDAO {
     }
     
     
-    
-    
 }
+    
 
 
 
@@ -57,3 +55,5 @@ class MaterialDAO {
 
 
 
+
+//>>>>>>> origin/master

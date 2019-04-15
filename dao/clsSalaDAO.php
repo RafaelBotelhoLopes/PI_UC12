@@ -31,7 +31,7 @@ class SalaDAO {
         if( $result != NULL ){
             while( list($_id, $_numero, $_descricao) = mysqli_fetch_row($result) ){
                 $sala = new Sala();
-                $sala->setCodigo($_id);
+                $Sala->setCodigo($_id);
                 $sala->setNumero($_numero);
                 $sala->setDescricao($_descricao);
                 $lista->append($sala);

@@ -25,87 +25,12 @@ table{
     padding: 5px;
     text-align: center;
     font-size: 20px;
-    
-/*<<<<<<< HEAD*/
-   width: 100%;
-   margin-bottom : .5em;
-   table-layout: fixed;
-   text-align: center;
-}
-    
-
-
-td{
-    color: black;
-    padding: 5px;
-    
-}
-
-th{
-    border-width: 3px;
-    background-color: whitesmoke;
-    
-}
-
-
-
-/*fim Yan*/
-/*======================================================================*/
-/*Ana*/
-
-.btnExcluir{
-    background-color: white;   
-    text-color: white;
-    border: solid 5px none;
-    color: black;
-    font-size: 20px;
-    padding: 5px;
-    
-    
-    
-    
-}
-
-.btnEditar{
-    background-color: white;   
-    text-color: white;
-    border: solid 5px none;
-    color: black;
-     font-size: 20px;
-     padding: 5px;
-}
-
-.btnMenu{
-    
-}
-
-.btnCadastrarUsuario{
-    background-color: white;   
-    text-color: black;
-    border: solid 2px white;
-    color: black;
-    border-radius: 10px;
-    font-size: 20px;
-   
-}
-    
-
-
-input[type=submit]{
     width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 10px;
-    background-color: #5b5;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
+    margin-bottom : .5em;
+    table-layout: fixed;
+    text-align: center;
 }
-input[type=submit]:hover{
-    background-color: #4a5;
-}
-
+    
 
 
 td{
@@ -126,20 +51,16 @@ th{
 /*======================================================================*/
 /*Ana*/
 
+
 .btnExcluir{
     background-color: white;   
     text-color: white;
-    border: solid 2px white;
+    border: solid 5px none;
     color: black;
-    
+    font-size: 20px;
+    padding: 5px;
 }
 
-.btnEditar{
-    background-color: white;   
-    text-color: white;
-    border: solid 2px white;
-    color: black;
-}
 
 .btnMenu{   
      width: 50;
@@ -202,9 +123,6 @@ input[type=submit]{
 input[type=submit]:hover{
     background-color: #4a5;
 }
-
-/*>>>>>>> origin/master*/
-
 
 
 

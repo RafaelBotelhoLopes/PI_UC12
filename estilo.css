@@ -47,6 +47,34 @@ th{
 
 
 
+#IdCadMat{
+    width: 50;
+    /*height: 200;*/
+/*    padding: 3px;*/
+    margin: 200px 480px;
+    border: solid 5px none;
+/*    border-radius: 10px;*/
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
+#IdCadSala{
+             width: 50;
+    /*height: 200;*/
+/*    padding: 3px;*/
+    margin: 300px 0px;
+    border: solid 5px none;
+/*    border-radius: 10px;*/
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+
 /*fim Yan*/
 /*======================================================================*/
 /*Ana*/

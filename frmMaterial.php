@@ -21,6 +21,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Programa de Reserva - Cadastrar Material</title>
+        <link href="estilo.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <?php

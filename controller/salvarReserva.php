@@ -32,6 +32,8 @@ if ( isset($_REQUEST['inserir']) ){
         
         $idReserva = ReservaDAO::inserir($reserva);
         $reserva->setCodigo($idReserva);
+        
+        header("Location: ../index.php");
                 
     
 }

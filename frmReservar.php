@@ -34,7 +34,7 @@
         <form align="center" action="controller/salvarReserva.php?" method="POST" enctype="multipart/form-data" >
             
             
-           <label>Selecione o material que deseja usar: </label>
+           <label>Selecione o material: </label>
                       
            <select name="Materiais">
                 <option value="0">Não Reservar Material</option>
@@ -54,7 +54,7 @@
             </select><br><br>
               
            
-            <label>Selecione a sala que deseja usar: </label>
+            <label>Selecione a sala: </label>
             <select name="Salas">
                 <option value="0">Não Reservar Sala</option>
                 <?php
@@ -65,7 +65,7 @@
                             $selecionar = "selected";
                             
                         }
-                        echo '<option '.$selecionar.' value="'.$sala->getCodigo().'" >'.$sala->getDescricao().'</option>';
+                        echo '<option '.$selecionar.' value="'.$sala->getCodigo().'" >'.$sala->getNumero()." - ".$sala->getDescricao().'</option>';
                         
                     }
                 ?>
@@ -73,34 +73,12 @@
             </select><br><br><br><br>  
      
      
-              <label>Dia da reserva: </label>
-              <input type="date" name="data"><br><br>
+              <label>De: </label>
+              <input type="datetime-local" name="data"><br><br>
+              <label>Até: </label>
+              <input type="datetime-local" name="data"><br><br>
             
             
-        
-     
-            <label>Horario Inicial: </label>
-            <select name="horarioInicial">
-                <option value="0">Selecione...</option>
-                <option value="1">09:15</option>
-                <option value="2">10:15</option>
-                <option value="3">11:15</option>
-                <option value="4">12:15</option>
-                <option value="5">13:15</option>
-                <option value="6">14:15</option>
-                <option value="7">15:15</option>
-            </select><br><br>
-            <label>Horario Final: </label>
-            <select name="horarioFinal">
-                <option value="0">Selecione...</option>
-                <option value="1">09:15</option>
-                <option value="2">10:15</option>
-                <option value="3">11:15</option>
-                <option value="4">12:15</option>
-                <option value="5">13:15</option>
-                <option value="6">14:15</option>
-                <option value="7">15:15</option>
-            </select><br><br><br><br>
         
             <input type="submit" value="Reservar"/>    
             

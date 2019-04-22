@@ -19,3 +19,5 @@
         <a href="frmMaterial.php"><button  id="IdCadMat">Cadastrar Material</button></a>
 
 <a href="frmSala.php"><button id="IdCadSala" >Cadastrar Sala</button></a>
+</body>
+</html>

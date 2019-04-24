@@ -41,6 +41,22 @@ class MaterialDAO {
         return $lista;
     }
     
+    public static function getMaterialById($codigo){
+        $sql = "SELECT codigo, nome, qtdEstoque FROM materiais WHERE codigo = ".$codigo;
+        $result = Conexao::consultar($sql);
+        if( $result != NULL ){
+            list($_cod, $_nome, $_qtdEstoque) = mysqli_fetch_row($result);
+                $material = new Material();
+                $material->setCodigo($_cod);
+                $material->setNome($_nome);
+                $material->setQuantidadeEstoque($_qtdEstoque);
+            
+                return $material;
+                
+        }
+       
+    }
+    
     
 }
     

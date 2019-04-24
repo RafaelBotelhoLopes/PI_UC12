@@ -19,6 +19,13 @@
         <?php
             include_once './dao/clsReservaDAO.php';
             include_once './dao/clsConexao.php';
+            include_once './dao/clsMaterialDAO.php';
+            include_once './dao/clsSalaDAO.php';
+            include_once './dao/clsUsuarioDAO.php';
+            include_once './model/clsMaterial.php';
+            include_once './model/clsReserva.php';
+            include_once './model/clsSala.php';
+            include_once './model/clsUsuario.php';
         
         
             $lista = ReservaDAO::getReservas();
@@ -42,8 +49,8 @@
                     
                     echo '  <td>'.$reserva->getDataInicial().'</td>';
                     echo '  <td>'.$reserva->getDataFinal().'</td>';
-                    echo '  <td>'.$reserva->getUsuario()->getNome().'</td>';
-                    echo '  <td>'.$reserva->getSala().'</td>';
+                    echo '  <td>'.$reserva->getCodUsuario()->getNomeCompleto().'</td>';
+                    echo '  <td>'.$reserva->getCodSala()->getNumero().'</td>';
                     echo '</tr>';
                 }
                 echo '</table>';
@@ -59,10 +66,10 @@
                 foreach ($lista as $reserva) {
                     echo '<tr>';
                     
-                    echo '  <td>'.$reserva->getHorarioInicial().'</td>';
-                    echo '  <td>'.$reserva->getHorarioFinal().'</td>';
-                    echo '  <td>'.$reserva->getUsuario()->getNome().'</td>';
-                    echo '  <td>'.$reserva->getMaterial().'</td>';
+                    echo '  <td>'.$reserva->getDataInicial().'</td>';
+                    echo '  <td>'.$reserva->getDataFinal().'</td>';
+                    echo '  <td>'.$reserva->getCodUsuario()->getNomeCompleto().'</td>';
+                    echo '  <td>'.$reserva->getCodMaterial()->getNome().'</td>';
                     echo '</tr>';
                 }
                 echo '</table>';

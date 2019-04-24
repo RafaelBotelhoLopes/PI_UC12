@@ -5,9 +5,9 @@ class ReservaDAO {
     public static function inserir ($reserva){
         $sql = " INSERT INTO reservas "
              . " (codUsuario, codSala, codMaterial, qtdMaterial, dataInicial, dataFinal) VALUES ( "
-             . "  ".$reserva->getUsuario()->getCodigo()." , "
-             . "  ".$reserva->getSala()->getCodigo()." , "
-             . "  ".$reserva->getMaterial()->getCodigo()." , "
+             . "  ".$reserva->getCodUsuario()->getId()." , "
+             . "  ".$reserva->getCodSala()->getCodigo()." , "
+             . "  ".$reserva->getCodMaterial()->getCodigo()." , "
              . "  '".$reserva->getQuantidadeMaterial()."' , "
              . "  '".$reserva->getDataInicial()."' , "
              . "  '".$reserva->getDataFinal()."' "
@@ -41,6 +41,44 @@ class ReservaDAO {
     }
     
     public static function getReservas (){
+        $sql = " SELECT r.codigo, r.qtdMaterial, r.dataInicial, r.dataFinal, u.codigo, u.nomeCompleto, s.codigo, s.numero, m.codigo, m.nome "
+             . " FROM reservas r "
+             . " INNER JOIN usuarios u ON r.codUsuario = u.codigo "
+             . " INNER JOIN salas s ON r.codSala = s.codigo "
+             . " INNER JOIN materiais m ON r.codMaterial = m.codigo "
+             . " ORDER BY r.dataInicial ";
+        $result = Conexao::consultar($sql);
+        $lista = new ArrayObject();
+        
+        while (list( $cod, $qtdM, $dataI, $dataF, $codU, $nomeU, $codS, $numS, $codM, $nomeM ) = mysqli_fetch_row($result)){
+            $material = new Material();
+            $material->setCodigo($codM);
+            $material->setNome($nomeM);
+            
+            $sala = new Sala();
+            $sala->setCodigo($codS);
+            $sala->setNumero($numS);
+            
+            $usuario = new Usuario();
+            $usuario->setId($codU);
+            $usuario->setNomeCompleto($nomeU);
+            
+            $reserva = new Reserva();
+            $reserva->setCodigo($cod);
+            $reserva->setQuantidadeMaterial($qtdM);
+            $reserva->setDataInicial($dataI);
+            $reserva->setDataFinal($dataF);
+            $reserva->setCodUsuario($usuario);
+            $reserva->setCodMaterial($material);
+            $reserva->setCodSala($sala);
+            
+            $lista->append($reserva);
+            
+        }
+        return $lista;
+    }
+    
+    public static function getReservasByMatSala (){
         $sql = " SELECT r.codigo, r.qtdMaterial, r.dataInicial, r.dataFinal, u.codigo, u.nomeCompleto, s.codigo, s.numero, m.codigo, m.nome "
              . " FROM reservas r "
              . " INNER JOIN usuarios u ON r.codUsuario = u.codigo "

@@ -25,14 +25,14 @@
         
    <?php
           echo 'Olá, '.$_SESSION['nome'];
-          echo '<a href="sair.php"><button id="sair">Sair</button></a>';
+          echo '<a href="sair.php"><button id="sair" class="btnMenu">Sair</button></a>';
           if( isset( $_SESSION['admin']) && $_SESSION['admin'] == TRUE){
               
-            echo '<a class="menu" href="CadMatSala.php"><button class="menu" id="materialsala">Cadastrar Material / Sala</button></a>';
-            echo '<a class="menu" href="frmUsuario.php">
-            <button id="cadastrar">Cadastrar</button></a>
-            <a class="menu" href="usuario.php">
-            <button id="usuarios">Usuários</button></a>';
+            echo '  <a class="menu" href="CadMatSala.php"><button class="btnMenu" id="materialsala">Cadastrar Material / Sala</button></a>';
+            echo '  <a class="menu" href="frmUsuario.php">
+                        <button id="cadastrar" class="btnMenu" >Cadastrar</button></a>
+                    <a class="menu" href="usuario.php">
+                        <button id="usuarios" class="btnMenu" >Usuários</button></a>';
             
         }
         }else{

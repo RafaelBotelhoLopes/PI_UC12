@@ -7,7 +7,7 @@ body{
 input{
     
 }
-#frmUsuario input{
+#frmUsuario{
     
 }
 
@@ -47,6 +47,34 @@ th{
 
 
 
+#IdCadMat{
+    width: 50;
+    /*height: 200;*/
+/*    padding: 3px;*/
+    margin: 200px 480px;
+    border: solid 5px none;
+/*    border-radius: 10px;*/
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
+#IdCadSala{
+             width: 50;
+    /*height: 200;*/
+/*    padding: 3px;*/
+    margin: 300px 0px;
+    border: solid 5px none;
+/*    border-radius: 10px;*/
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+
 /*fim Yan*/
 /*======================================================================*/
 /*Ana*/
@@ -61,12 +89,21 @@ th{
     padding: 5px;
 }
 
+.btnEditar{
+    background-color: white;   
+    text-color: white;
+    border: solid 5px none;
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+}
+
 
 .btnMenu{   
      width: 50;
     /*height: 200;*/
 /*    padding: 3px;*/
-    margin: 0.5px 0;
+    margin: 1px 2px;
     border: solid 5px none;
 /*    border-radius: 10px;*/
     background-color: white;
@@ -79,7 +116,8 @@ th{
 }
 
 #foto{
-    width: 50px;
+    
+    width: 45px;
 }
 
 .btnCadastrarUsuario{
@@ -95,24 +133,24 @@ th{
     cursor: pointer;
 }
 
-#materialsala , #cadastrar, #usuarios, #sair, #limpar{
-       width: 10;
-    /*height: 200;*/
-/*    padding: 3px;*/
+/*#materialsala , #cadastrar, #usuarios, #limpar, #sair{
+       width: 10px;
+    height: 200;
+    padding: 3px;
     margin: 0.5px 0;
     border: solid 5px none;
-/*    border-radius: 10px;*/
+    border-radius: 10px;
     background-color: white;
     color: black;
     font-size: 15px;
     cursor: pointer;
-}
+}*/
 
 input[type=submit]{
     width: 10;
     /*height: 200;*/
 /*    padding: 3px;*/
-    margin: 0.5px 0;
+    margin: 1px 0;
     border: solid 5px none;
     /*border-radius: 10px;*/
     background-color: #5b5;

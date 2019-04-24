@@ -79,6 +79,31 @@
                             </div>
                         </div>
             
+               
+            
+            <!--editar-->
+            
+            <div id="openModal_<?php echo $user->getId(); ?>" class="modalDialog">
+                            <div>
+                              <a href="#edit" title="Edit" class="editModal"></a>
+                              <!-- Conteúdo do Modal -->
+                              <h2>Editar</h2>
+                              <a href="frmUsuario.php?editar&idUsuario=<?php  echo $user->getId() ?>">
+                                <button>Confirmar</button></a> 
+                              <a href="#close" ><button>Sair</button></a>
+
+
+
+                              <!-- Conteúdo do Modal -->
+                            </div>
+                        </div>
+            
+            <!--editar-->
+            
+            
+            
+            
+            
             <?php
             
             
@@ -121,6 +146,23 @@
       </div>
     </div>
         
+
+<!--Editar-->
+<div id="openModal" class="modalDialog">
+      <div>
+        <a href="#edit" title="Edit" class="editModal"></a>
+        <!-- Conteúdo do Modal -->
+        <h2>Editar</h2>
+    
+        <a href="frmUsuario.php?editar&idUsuario='.$id.'">
+          <button>Confirmar</button></a> 
+        <a href="../usuario.php" ><button>Sair</button></a>
+        
+        
+        
+        <!-- Conteúdo do Modal -->
+      </div>
+    </div>
     
     
     
@@ -177,6 +219,9 @@
   background: #f00; 
 }
     </style>
+    
+    
+    
     
         
     </body>

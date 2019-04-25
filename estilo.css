@@ -1,36 +1,23 @@
 /*Comum*/
 
 #menu{
-    background-color: black;
+    background-color: #4682B4;
     height: 200px;
+    /*width: 720px;*/ 
     width: 100%;
     padding: 20px 600px;
     margin: 0px;
-    border-style: solid;
-    border-width: 0px 0px 1px 0px;
-    align-center: 100%;
+    
+    border-width: 0px 20px 0px 0px;
     
     
     
-   div{
-/*        width: 24%;
-        height: 500px;*/
-        /*padding: 200px 5px;*/
-        
-        
-    /*height: 200;*/
-    align-center: 100%;
-    padding: 20px;
-    margin: 200px 40px;
-    border: solid 5px none;
-/*    border-radius: 10px;*/
-      
-    }
+/*<input type="text" name="buscar" value="buscar" size="20" style="background-color: whitesmoke"  width="2px" height="20px"/>*/
 }
 
 body{
     background-color: #ADD8E6;  
-    margin: 0px;
+    margin: 0px ;
     padding: 0px;
 }
 
@@ -135,21 +122,22 @@ th{
      width: 50;
     /*height: 200;*/
 /*    padding: 3px;*/
-    margin: 1px 2px;
-    border: solid 5px pink;
-/*    border-radius: 10px;*/
-    background-color: white;
-    color: black;
+    margin: 5px 2px;
+    border: solid 8px #E0FFFF;
+    border-bottom-color: #87CEEB;
+    border-bottom: 4px solid #87CEEB;
+    border-radius: 10px;
+    background-color: #E0FFFF;
+    color: #000080;
     font-size: 15px;
     cursor: pointer;
-    
-
-    
+    padding: 5px;
+      
 }
 
 #foto{
-    
-    width: 45px;
+    margin: 50px 200px;
+    width: 128px;
 }
 
 .btnCadastrarUsuario{
@@ -179,11 +167,14 @@ th{
 }*/
 
 input[type=submit]{
-    width: 10;
+    width: 50;
     /*height: 200;*/
-/*    padding: 3px;*/
-    margin: 1px 0;
-    border: solid 5px none;
+    padding: 5px;
+    margin: 5px 20px;
+    border: solid 8px #5b5;
+    border-radius: 10px;
+    border-bottom-color: #008000;
+    border-bottom: 4px solid #008000;
     /*border-radius: 10px;*/
     background-color: #5b5;
     color: white;
@@ -192,6 +183,10 @@ input[type=submit]{
 }
 input[type=submit]:hover{
     background-color: #4a5;
+    border: solid 8px #4a5;
+    border-radius: 10px;
+    border-bottom-color: #006400;
+    border-bottom: 4px solid #006400;
 }
 
 

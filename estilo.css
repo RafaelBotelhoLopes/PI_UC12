@@ -1,5 +1,32 @@
 /*Comum*/
 
+#menu{
+    background-color: black;
+    height: 150px;
+  
+    
+    
+   div{
+/*        width: 24%;
+        height: 500px;*/
+        /*padding: 200px 5px;*/
+        
+        width: 50;
+    /*height: 200;*/
+    padding: 200px;
+    margin: 200px 480px;
+    border: solid 5px none;
+/*    border-radius: 10px;*/
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+        
+    
+        
+    }
+}
+
 body{
     background-color: #ADD8E6;  
 }
@@ -7,13 +34,15 @@ body{
 input{
     
 }
-#frmUsuario input{
+#frmUsuario{
     
 }
 
 .b{
     
 }
+
+
 /*=====================================================================*/
 /*Yan*/ 
 

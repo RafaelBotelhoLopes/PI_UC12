@@ -35,11 +35,11 @@ class Reserva {
         return $this->codMaterial;
     }
 
-    function getQtdMaterial() {
+    function getQuantidadeMaterial() {
         return $this->qtdMaterial;
     }
 
-    function getDaraInicial() {
+    function getDataInicial() {
         return $this->dataInicial;
     }
 
@@ -63,7 +63,7 @@ class Reserva {
         $this->codMaterial = $codMaterial;
     }
 
-    function setQtdMaterial($qtdMaterial) {
+    function setQuantidadeMaterial($qtdMaterial) {
         $this->qtdMaterial = $qtdMaterial;
     }
 

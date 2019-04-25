@@ -2,8 +2,14 @@
 
 #menu{
     background-color: black;
-    height: 150px;
-  
+    height: 200px;
+    width: 100%;
+    padding: 20px 600px;
+    margin: 0px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    align-center: 100%;
+    
     
     
    div{
@@ -11,24 +17,21 @@
         height: 500px;*/
         /*padding: 200px 5px;*/
         
-        width: 50;
+        
     /*height: 200;*/
-    padding: 200px;
-    margin: 200px 480px;
+    align-center: 100%;
+    padding: 20px;
+    margin: 200px 40px;
     border: solid 5px none;
 /*    border-radius: 10px;*/
-    background-color: white;
-    color: black;
-    font-size: 30px;
-    cursor: pointer;
-        
-    
-        
+      
     }
 }
 
 body{
     background-color: #ADD8E6;  
+    margin: 0px;
+    padding: 0px;
 }
 
 input{
@@ -133,7 +136,7 @@ th{
     /*height: 200;*/
 /*    padding: 3px;*/
     margin: 1px 2px;
-    border: solid 5px none;
+    border: solid 5px pink;
 /*    border-radius: 10px;*/
     background-color: white;
     color: black;

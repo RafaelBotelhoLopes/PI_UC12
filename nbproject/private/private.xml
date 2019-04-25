@@ -3,7 +3,27 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/xampp/htdocs/m171/PI_UC12/estilo.css</file>
+=======
+<<<<<<< HEAD
+            <file>file:/C:/xampp/htdocs/m171/PI_UC12/usuario.php</file>
+            <file>file:/C:/xampp/htdocs/m171/PI_UC12/estilo.css</file>
+            <file>file:/C:/xampp/htdocs/m171/PI_UC12/index.php</file>
+            <file>file:/C:/xampp/htdocs/m171/PI_UC12/controller/salvarReserva.php</file>
+            <file>file:/C:/xampp/htdocs/m171/PI_UC12/frmReservar.php</file>
+=======
+
+            <file>file:/C:/xampp/htdocs/m171/PI_UC12/CadMatSala.php</file>
+            <file>file:/C:/xampp/htdocs/m171/PI_UC12/frmReservar.php</file>
+            <file>file:/C:/xampp/htdocs/m171/PI_UC12/usuario.php</file>
+            <file>file:/C:/xampp/htdocs/m171/PI_UC12/estilo.css</file>
+            <file>file:/C:/xampp/htdocs/m171/PI_UC12/controller/salvarUsuario.php</file>
+            <file>file:/C:/xampp/htdocs/m171/PI_UC12/frmUsuario.php</file>
+
+
+>>>>>>> a770c243ed1eb7c8a096d0914865247da8b00920
+>>>>>>> 11880300f32e91295426a3e1e20028b8d23b75fc
         </group>
     </open-files>
 </project-private>

@@ -4,11 +4,13 @@
     background-color: black;
     height: 200px;
     width: 100%;
-    padding: 20px 600px;
+    padding: 0px;
     margin: 0px;
     border-style: solid;
     border-width: 0px 0px 1px 0px;
     align-center: 100%;
+   
+    
     
     
     
@@ -32,17 +34,34 @@ body{
     background-color: #ADD8E6;  
     margin: 0px;
     padding: 0px;
+    font-family: Verdana;
+    font-size: 95%;
 }
 
-input{
-    
+.campo{
+    background: #DCDCDC;
 }
 #frmUsuario{
+  width: 700px;
+  height: 290px;
+  margin: auto;
+  border: 3px solid #4682B4;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #E0FFFF;
+  
+
     
 }
 
-.b{
-    
+.cadMaterialSala{
+     width: 700px;
+  height: 290px;
+  margin: auto;
+  border: 3px solid #4682B4;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #E0FFFF; 
 }
 
 

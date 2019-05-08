@@ -33,7 +33,7 @@
         <br><br><br>
         
         <form action="controller/salvarMaterial.php?<?php echo $action; ?>" method="POST" 
-              enctype="multipart/form-data">
+              enctype="multipart/form-data" class="cadMaterialSala">
                       
             
             <label>Nome do item: </label>

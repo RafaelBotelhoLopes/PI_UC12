@@ -44,7 +44,7 @@
         <br><br><br>
         
         <form action="controller/salvarUsuario.php?<?php echo $action; ?>" method="POST" 
-              enctype="multipart/form-data">
+              enctype="multipart/form-data" id="frmUsuario">
             
             <?php
                 if( isset( $_SESSION['admin']) && $_SESSION['admin'] ){
@@ -59,24 +59,24 @@
             ?>
             
             <label>Nome Completo: </label>
-            <input type="text" name="txtNomeCompleto" value="<?php echo $nome; ?>" required maxlength="100" /> <br><br>
+            <input type="text" name="txtNomeCompleto" class="campo" value="<?php echo $nome; ?>" required maxlength="100" /> <br><br>
             
             <label>Nome de Usuário: </label>
-            <input type="text" name="txtNomeUsuario" value="<?php echo $nomeUsuario; ?>" required maxlength="100" /> <br><br>
+            <input type="text" name="txtNomeUsuario" class="campo" value="<?php echo $nomeUsuario; ?>" required maxlength="100" /> <br><br>
             
             <label>E-mail: </label>
-            <input type="email" name="txtEmail" value="<?php echo $email; ?>" required /> <br><br>
+            <input type="email" name="txtEmail" class="campo" value="<?php echo $email; ?>" required /> <br><br>
        
             
-            <br><br>
+            
            
             <?php
                 if( !isset( $_REQUEST['editar'] )){
             ?>
                     <label>Senha: </label>
-                    <input type="password" name="txtSenha" required maxlength="100"  /> <br><br>
+                    <input type="password" name="txtSenha" class="campo" required maxlength="100"  /> <br><br>
                     <label>Confirme sua Senha: </label>
-                    <input type="password" name="txtSenhaConfirma" required maxlength="100" /> <br>
+                    <input type="password" name="txtSenhaConfirma" class="campo" required maxlength="100" /> <br>
                     <br><br>
             <?php 
                 }

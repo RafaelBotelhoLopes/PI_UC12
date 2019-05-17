@@ -23,8 +23,10 @@
     <a class="menu" href="frmReservar.php">
         <button class="btnMenu">Reservar</button></a>
         
+        
    <?php
-          echo 'Olá, '.$_SESSION['nome'];
+          echo '<button id="ola" class="btnMenu"></button></a>';
+          echo 'Olá, '.$_SESSION['nome']; 
           echo '<a href="sair.php"><button id="sair" class="btnMenu">Sair</button></a>';
           if( isset( $_SESSION['admin']) && $_SESSION['admin'] == TRUE){
               
@@ -61,6 +63,7 @@
 
 <style>
     #frmMenu{
+        
         float: left;
     }
 /*    .menu{
@@ -72,6 +75,7 @@
         
     }
     #menu a{
+        
         float: left;
         margin-left: 5px;
         

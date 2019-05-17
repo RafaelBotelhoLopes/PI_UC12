@@ -19,10 +19,20 @@ if ( isset($_REQUEST['inserir']) ){
         $material->setCodigo($_POST['Materiais']);
         
         $sala = new Sala();
-        $sala->setCodigo($_POST['Salas']);
+        if ($_POST['Salas'] > 0){
+            $sala->setCodigo($_POST['Salas']);
+        }else {
+            $sala->setCodigo(11);
+        }
         
-        $dataInicial = date ($_POST['dataInicial']);
-        $dataFinal = date($_POST['dataFinal']);
+        
+        $d = $_POST['dataInicial'];
+        $dataInicial = substr($d, 0, 10) .' '. substr($d, 11, 5) ;
+       
+       
+        $d = $_POST['dataFinal'];
+        $dataFinal   = substr($d, 0, 10) .' '. substr($d, 11, 5) ;
+     
         
         $reserva = new Reserva();
         $reserva->setCodUsuario($usuario);
@@ -32,8 +42,7 @@ if ( isset($_REQUEST['inserir']) ){
         $reserva->setDataInicial($dataInicial);
         $reserva->setDataFinal($dataFinal);
         
-        $idReserva = ReservaDAO::inserir($reserva);
-        $reserva->setCodigo($idReserva);
+        ReservaDAO::inserir($reserva);
         
         header("Location: ../index.php");
                 

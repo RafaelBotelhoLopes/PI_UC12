@@ -33,7 +33,7 @@
         <br><br><br>
         
         <form action="controller/salvarSala.php?<?php echo $action; ?>" method="POST"
-              enctype="multipart/form-data">
+              enctype="multipart/form-data" class="cadMaterialSala"
 
 
             <label>Número da nova sala: </label>

@@ -8,7 +8,7 @@
     
 
 
-     <img id="foto" src="imagens/dog.jpg" alt="Insta"  />                   
+    <img id="foto" src="imagens/entrega.jpg" alt="Empresa"  />                   
 
    
     
@@ -55,7 +55,7 @@
         }
     ?>
     
-    <br><hr>
+    <br>
     
 </div>
 

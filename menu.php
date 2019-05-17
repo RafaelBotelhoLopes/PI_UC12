@@ -32,7 +32,7 @@ if (session_status() != PHP_SESSION_ACTIVE) {
 //          echo '<button id="ola" class="btnMenu"></button></a>';
     
           
-          echo '<a href="sair.php"><button id="sair" class="btnMenu">Sair</button></a>';
+         
           if( isset( $_SESSION['admin']) && $_SESSION['admin'] == TRUE){
 
    
@@ -42,6 +42,7 @@ if (session_status() != PHP_SESSION_ACTIVE) {
                         <button id="cadastrar" class="btnMenu" >Cadastrar</button></a>
                     <a class="menu" href="usuario.php">
                         <button id="usuarios" class="btnMenu" >Usuários</button></a>';
+             echo '<a href="sair.php"><button id="sair" class="btnMenu">Sair</button></a>';
 
            echo '  <button class="btnMenu" id="ola">Olá, '.$_SESSION['nome'].'</button>';
             

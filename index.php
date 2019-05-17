@@ -34,12 +34,13 @@
                 echo '<h3>Não existem Reservas!</h3>';
             } else {
                 
-                echo '<table border="1">';
+                echo '<table border="1" class="tb">';
                 echo '   <tr> ';
                 echo '      <th>Data Inicial</th> ';
                 echo '      <th>Data Final</th> ';
                 echo '      <th>Nome</th> ';
                 echo '      <th>Sala</th> ';
+                echo '      <th>Material</th> ';
                 echo '   </tr> ';
                 
                 
@@ -51,28 +52,29 @@
                     echo '  <td>'.$reserva->getDataFinal().'</td>';
                     echo '  <td>'.$reserva->getCodUsuario()->getNomeCompleto().'</td>';
                     echo '  <td>'.$reserva->getCodSala()->getNumero().'</td>';
-                    echo '</tr>';
-                }
-                echo '</table>';
-                
-                 echo '<table border="1">';
-                echo '   <tr> ';
-                echo '      <th>Data Inicial</th> ';
-                echo '      <th>Data Final</th> ';
-                echo '      <th>Nome</th> ';
-                echo '      <th>Material</th> ';
-                echo '   </tr> ';
-                
-                foreach ($lista as $reserva) {
-                    echo '<tr>';
-                    
-                    echo '  <td>'.$reserva->getDataInicial().'</td>';
-                    echo '  <td>'.$reserva->getDataFinal().'</td>';
-                    echo '  <td>'.$reserva->getCodUsuario()->getNomeCompleto().'</td>';
                     echo '  <td>'.$reserva->getCodMaterial()->getNome().'</td>';
                     echo '</tr>';
                 }
                 echo '</table>';
+                
+//                 echo '<table border="1" class="tb">';
+//                echo '   <tr> ';
+//                echo '      <th>Data Inicial</th> ';
+//                echo '      <th>Data Final</th> ';
+//                echo '      <th>Nome</th> ';
+//                echo '      <th>Material</th> ';
+//                echo '   </tr> ';
+//                
+//                foreach ($lista as $reserva) {
+//                    echo '<tr>';
+//                    
+//                    echo '  <td>'.$reserva->getDataInicial().'</td>';
+//                    echo '  <td>'.$reserva->getDataFinal().'</td>';
+//                    echo '  <td>'.$reserva->getCodUsuario()->getNomeCompleto().'</td>';
+//                    echo '  <td>'.$reserva->getCodMaterial()->getNome().'</td>';
+//                    echo '</tr>';
+//                }
+//                echo '</table>';
                 
             }
         

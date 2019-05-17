@@ -3,6 +3,7 @@
 class ReservaDAO {
     
     public static function inserir ($reserva){
+     
         $sql = " INSERT INTO reservas "
              . " (codUsuario, codSala, codMaterial, qtdMaterial, dataInicial, dataFinal) VALUES ( "
              . "  ".$reserva->getCodUsuario()->getId()." , "
@@ -10,7 +11,7 @@ class ReservaDAO {
              . "  ".$reserva->getCodMaterial()->getCodigo()." , "
              . "  '".$reserva->getQuantidadeMaterial()."' , "
              . "  '".$reserva->getDataInicial()."' , "
-             . "  '".$reserva->getDataFinal()."' "
+             . "  '".$reserva->getDataFinal()."'    "
              . " );";
                 
             $idReserva = Conexao::executar($sql);  
@@ -41,7 +42,7 @@ class ReservaDAO {
     }
     
     public static function getReservas (){
-        $sql = " SELECT r.codigo, r.qtdMaterial, r.dataInicial, r.dataFinal, u.codigo, u.nomeCompleto, s.codigo, s.numero, m.codigo, m.nome "
+        $sql = " SELECT r.codigo, r.qtdMaterial, DATE_FORMAT(r.dataInicial , '%d/%m/%Y %H:%i'), DATE_FORMAT(r.dataFinal , '%d/%m/%Y %H:%i'), u.codigo, u.nomeCompleto, s.codigo, s.numero, m.codigo, m.nome "
              . " FROM reservas r "
              . " INNER JOIN usuarios u ON r.codUsuario = u.codigo "
              . " INNER JOIN salas s ON r.codSala = s.codigo "

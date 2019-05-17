@@ -73,6 +73,7 @@
             <?php
                 if( !isset( $_REQUEST['editar'] )){
             ?>
+                    
                     <label>Senha: </label>
                     <input type="password" name="txtSenha" required maxlength="100"  /> <br><br>
                     <label>Confirme sua Senha: </label>

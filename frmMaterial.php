@@ -37,7 +37,7 @@
                       
             
             <label>Nome do item: </label>
-            <input type="text" name="txtNomeItem" value="<?php echo $nomeItem; ?>" required maxlength="100" /> <br><br>
+            <input type="text" name="txtNomeItem" id="campoNome" value="<?php echo $nomeItem; ?>" required maxlength="100" /> <br><br>
             
             <label>Quantidade em estoque: </label>
             <input type="number" name="txtQtdEstoque" value="<?php echo $QtdEstoque; ?>" required maxlength="100" /> <br><br>
@@ -45,8 +45,8 @@
             <br><br>
            
 
-            <input type="submit" value="Salvar" />
-            <input type="reset" value="Limpar" />
+            <input type="submit" id="CadMatSalvar" value="Salvar" />
+            <input type="reset" id="CadMatLimpar" value="Limpar" />
             
             
         </form>

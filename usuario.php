@@ -32,7 +32,7 @@
             } else {
               
         ?>
-        <table border="1">
+        <table border="1" >
             <tr>
                 <th>Código</th>
                 <th>Nome Completo</th>

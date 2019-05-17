@@ -28,9 +28,10 @@ if (session_status() != PHP_SESSION_ACTIVE) {
    <?php
           echo '<button id="ola" class="btnMenu"></button></a>';
           echo 'Olá, '.$_SESSION['nome']; 
-          echo '<a href="sair.php"><button id="sair" class="btnMenu">Sair</button></a>';
-          if( isset( $_SESSION['admin']) && $_SESSION['admin'] == TRUE){
+          
               
+            
+        if (isset($_SESSION['admin']) && $_SESSION['admin'] == TRUE) {
             echo '  <a class="menu" href="CadMatSala.php"><button class="btnMenu" id="materialsala">Cadastrar Material / Sala</button></a>';
             echo '  <a class="menu" href="frmUsuario.php">
 
@@ -39,11 +40,9 @@ if (session_status() != PHP_SESSION_ACTIVE) {
                         <button id="usuarios" class="btnMenu" >Usuários</button></a>';
         echo 'Olá, ' . $_SESSION['nome'];
         echo '<a href="sair.php"><button id="sair" class="btnMenu">Sair</button></a>';
-        if (isset($_SESSION['admin']) && $_SESSION['admin'] == TRUE) {
-            
         }
         
-          }
+          
     } else {
         ?>
         <form id="frmMenu" action="entrar.php" method="POST" >

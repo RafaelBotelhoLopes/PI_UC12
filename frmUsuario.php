@@ -82,9 +82,9 @@
             <?php 
                 }
             ?>
-            <input type="submit" value="Salvar" />
+            <input type="submit" id="campoSalvarUsuario" value="Salvar" />
 
-            <input id="limpar" type="reset" value="Limpar" />
+            <input  type="reset" id="campoLimparUsu" value="Limpar" />
 
             
             

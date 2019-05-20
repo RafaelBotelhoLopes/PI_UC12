@@ -17,6 +17,9 @@
         <h1 align="center">Bem-vindo Programa de Reserva </h1>
         
         <?php
+        
+
+        
             include_once './dao/clsReservaDAO.php';
             include_once './dao/clsConexao.php';
             include_once './dao/clsMaterialDAO.php';
@@ -43,17 +46,51 @@
                 echo '      <th>Material</th> ';
                 echo '   </tr> ';
                 
+                date_default_timezone_set('America/Sao_Paulo');
+                $date = date('Y-m-d H:i');
+                echo $date;
                 
-                
-                foreach ($lista as $reserva) {
-                    echo '<tr>';
+//                if ($date > Reserva::getDataFinal() || $date < Reserva::getDataInicial()){
+//                        $status = Reserva::getStatus();
+//                        $status = 0;
+//                    }else{
+//                        $status = 1;
+//                    }
+                $cont = 0;
+                foreach ($lista as $reserva) { 
+                    $cont ++;
                     
-                    echo '  <td>'.$reserva->getDataInicial().'</td>';
-                    echo '  <td>'.$reserva->getDataFinal().'</td>';
-                    echo '  <td>'.$reserva->getCodUsuario()->getNomeCompleto().'</td>';
-                    echo '  <td>'.$reserva->getCodSala()->getNumero().'</td>';
-                    echo '  <td>'.$reserva->getCodMaterial()->getNome().'</td>';
-                    echo '</tr>';
+                    
+//                        if( $cont == 2 ){
+//                            echo 'id '.$reserva->getDataInicial().' - '.$reserva->getDataFinal();
+//
+//                        if($reserva->getDataFinal() < $date ){
+//                            echo '0 - '.($reserva->getDataFinal() - $date);
+//                        }else{
+//                            echo '1 - '.($reserva->getDataFinal() - $date);
+//                        }
+//                    };
+                    
+                
+                    $data = new DateTime( $reserva->getDataFinal() );
+                    $dataFinal = $data->getTimestamp();
+
+                    if( $dataFinal < time() ){
+                        
+                    } else {
+                        echo 'menor';
+                    }
+                    
+                    if($reserva->getStatus()!=0){
+                        echo '<tr>';
+
+                        echo '  <td>'.$reserva->getDataInicial().'</td>';
+                        echo '  <td>'.$reserva->getDataFinal().'</td>';
+                        echo '  <td>'.$reserva->getCodUsuario()->getNomeCompleto().'</td>';
+                        echo '  <td>'.$reserva->getCodSala()->getNumero().'</td>';
+                        echo '  <td>'.$reserva->getCodMaterial()->getNome().'</td>';
+                        echo '</tr>';
+                    }
                 }
                 echo '</table>';
                 
@@ -77,7 +114,8 @@
 //                echo '</table>';
                 
             }
-        
+            
+            
         ?>
         
     </body>

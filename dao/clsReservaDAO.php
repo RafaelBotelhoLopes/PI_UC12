@@ -42,7 +42,8 @@ class ReservaDAO {
     }
     
     public static function getReservas (){
-        $sql = " SELECT r.codigo, r.qtdMaterial, DATE_FORMAT(r.dataInicial , '%d/%m/%Y %H:%i'), DATE_FORMAT(r.dataFinal , '%d/%m/%Y %H:%i'), u.codigo, u.nomeCompleto, s.codigo, s.numero, m.codigo, m.nome "
+       // $sql = " SELECT r.codigo, r.qtdMaterial, DATE_FORMAT(r.dataInicial , '%d/%m/%Y %H:%i'), DATE_FORMAT(r.dataFinal , '%d/%m/%Y %H:%i'), u.codigo, u.nomeCompleto, s.codigo, s.numero, m.codigo, m.nome, r.status "
+        $sql = " SELECT r.codigo, r.qtdMaterial, r.dataInicial, r.dataFinal, u.codigo, u.nomeCompleto, s.codigo, s.numero, m.codigo, m.nome, r.status "
              . " FROM reservas r "
              . " INNER JOIN usuarios u ON r.codUsuario = u.codigo "
              . " INNER JOIN salas s ON r.codSala = s.codigo "
@@ -51,7 +52,7 @@ class ReservaDAO {
         $result = Conexao::consultar($sql);
         $lista = new ArrayObject();
         
-        while (list( $cod, $qtdM, $dataI, $dataF, $codU, $nomeU, $codS, $numS, $codM, $nomeM ) = mysqli_fetch_row($result)){
+        while (list( $cod, $qtdM, $dataI, $dataF, $codU, $nomeU, $codS, $numS, $codM, $nomeM, $stat ) = mysqli_fetch_row($result)){
             $material = new Material();
             $material->setCodigo($codM);
             $material->setNome($nomeM);
@@ -72,6 +73,7 @@ class ReservaDAO {
             $reserva->setCodUsuario($usuario);
             $reserva->setCodMaterial($material);
             $reserva->setCodSala($sala);
+            $reserva->setStatus($stat);
             
             $lista->append($reserva);
             
@@ -110,6 +112,20 @@ class ReservaDAO {
             $reserva->setCodUsuario($usuario);
             $reserva->setCodMaterial($material);
             $reserva->setCodSala($sala);
+            
+            $lista->append($reserva);
+            
+        }
+        return $lista;
+    }
+    public static function getDatasFinais(){
+        $sql = "SELECT dataFinal from reservas";
+        $result = Conexao::consultar($sql);
+        $lista = new ArrayObject();
+        
+        while (list($dataF) = mysqli_fetch_row($result)){
+            $reserva = new Reserva();
+            $reserva->setDataFinal($dataF);
             
             $lista->append($reserva);
             

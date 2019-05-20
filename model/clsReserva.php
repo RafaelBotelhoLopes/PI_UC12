@@ -8,8 +8,9 @@ class Reserva {
     private $qtdMaterial;
     private $dataInicial;
     private $dataFinal;
+    private $status;
     
-    function __construct($codigo = NULL, $codUsuario = NULL, $codSala = NULL, $codMaterial = NULL, $qtdMaterial = NULL, $dataInicial = NULL, $dataFinal = NULL) {
+    function __construct($codigo = NULL, $codUsuario = NULL, $codSala = NULL, $codMaterial = NULL, $qtdMaterial = NULL, $dataInicial = NULL, $dataFinal = NULL, $status = NULL) {
         $this->codigo = $codigo;
         $this->codUsuario = $codUsuario;
         $this->codSala = $codSala;
@@ -17,6 +18,7 @@ class Reserva {
         $this->qtdMaterial = $qtdMaterial;
         $this->dataInicial = $dataInicial;
         $this->dataFinal = $dataFinal;
+        $this->status = $status;
     }
 
     function getCodigo() {
@@ -46,6 +48,9 @@ class Reserva {
     function getDataFinal() {
         return $this->dataFinal;
     }
+    function getStatus(){
+        return $this->status;
+    }
 
     function setCodigo($codigo) {
         $this->codigo = $codigo;
@@ -73,6 +78,9 @@ class Reserva {
 
     function setDataFinal($dataFinal) {
         $this->dataFinal = $dataFinal;
+    }
+    function setStatus($status) {
+        $this->status = $status;
     }
 
 }

@@ -28,8 +28,19 @@ body{
 }
 
 .campo{
-    background: #DCDCDC;
+
+
+
+
+
+    background: white;
 }
+
+#frmMenu{
+
+    
+}
+
 #frmUsuario{
   width: 700px;
   height: 290px;
@@ -124,6 +135,7 @@ th{
     padding: 5px;
     width: 50;
     cursor: pointer;
+    
 /*             width: 50;
     margin: 300px 0px;
     border: solid 5px none;
@@ -141,6 +153,135 @@ th{
 /*======================================================================*/
 /*Ana*/
 
+#campoSalvarUsuario{
+    width: 50;
+    /*height: 200;*/
+    padding: 5px;
+    margin: 1px 7px;
+    border: solid 8px #87CEEB;
+    border-radius: 10px;
+    border-bottom-color: #87CEEB;
+    border-bottom: 4px solid #87CEEB;
+    /*border-radius: 10px;*/
+    background-color: #87CEEB;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+#campoLimparUsu{
+    width: 50;
+    /*height: 200;*/
+    padding: 5px;
+    margin: 1px 7px;
+    border: solid 8px #87CEEB;
+    border-radius: 10px;
+    border-bottom-color: #87CEEB;
+    border-bottom: 4px solid #87CEEB;
+    /*border-radius: 10px;*/
+    background-color: #87CEEB;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#campoNome{
+    background-color: white;
+}
+
+#btnReservar{
+    width: 50;
+    /*height: 200;*/
+    padding: 5px;
+    margin: 20px 7px;
+    border: solid 8px #87CEEB;
+    border-radius: 10px;
+    border-bottom-color: #87CEEB;
+    border-bottom: 4px solid #87CEEB;
+    /*border-radius: 10px;*/
+    background-color: #87CEEB;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+#CadSalaSalvar{
+     width: 50;
+    /*height: 200;*/
+    padding: 5px;
+    margin: 20px 7px;
+    border: solid 8px #87CEEB;
+    border-radius: 10px;
+    border-bottom-color: #87CEEB;
+    border-bottom: 4px solid #87CEEB;
+    /*border-radius: 10px;*/
+    background-color: #87CEEB;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#CadSalaLimpar{
+    width: 50;
+    /*height: 200;*/
+    padding: 5px;
+    margin: 20px 7px;
+    border: solid 8px #87CEEB;
+    border-radius: 10px;
+    border-bottom-color: #87CEEB;
+    border-bottom: 4px solid #87CEEB;
+    /*border-radius: 10px;*/
+    background-color: #87CEEB;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#CadMatSalvar{
+    width: 50;
+    /*height: 200;*/
+    padding: 5px;
+    margin: 20px 7px;
+    border: solid 8px #87CEEB;
+    border-radius: 10px;
+    border-bottom-color: #87CEEB;
+    border-bottom: 4px solid #87CEEB;
+    /*border-radius: 10px;*/
+    background-color: #87CEEB;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#CadMatLimpar{
+    width: 50;
+    /*height: 200;*/
+    padding: 5px;
+    margin: 20px 7px;
+    border: solid 8px #87CEEB;
+    border-radius: 10px;
+    border-bottom-color: #87CEEB;
+    border-bottom: 4px solid #87CEEB;
+    /*border-radius: 10px;*/
+    background-color: #87CEEB;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+#ola{
+   background-color: #4682B4;
+   border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    align-center: 100%;
+    color: white;
+    font-size: 25px;
+
+    border-width: 0px 0px 0px 0px;
+   
+}
 
 .btnExcluir{
     background-color: white;   
@@ -192,20 +333,20 @@ th{
 }*/
 
 #foto{
-    margin: 50px 300px;
+    margin: 50px 350px;
     width: 128px;
 }
 
 .btnCadastrarUsuario{
          width: 10;
     /*height: 200;*/
-/*    padding: 3px;*/
-    margin: 0.5px 0;
+    padding: 3px;
+    margin: 1px 20px;
     border: solid 5px none;
     /*border-radius: 10px;*/
     background-color: white;
     color: black;
-    font-size: 15px;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -226,23 +367,24 @@ input[type=submit]{
     width: 50;
     /*height: 200;*/
     padding: 5px;
-    margin: 5px 20px;
-    border: solid 8px #5b5;
+    margin: 70px 7px;
+    border: solid 8px #E0FFFF;
     border-radius: 10px;
-    border-bottom-color: #008000;
-    border-bottom: 4px solid #008000;
+    border-bottom-color: #E0FFFF;
+    border-bottom: 4px solid #87CEEB;
     /*border-radius: 10px;*/
-    background-color: #5b5;
-    color: white;
-    font-size: 30px;
+    background-color: #E0FFFF;
+    color: #000080;
+    font-size: 19px;
     cursor: pointer;
 }
 input[type=submit]:hover{
-    background-color: #4a5;
-    border: solid 8px #4a5;
+    padding: 7px;
+    background-color: #E0FFFF;
+    border: solid 8px #E0FFFF;
     border-radius: 10px;
-    border-bottom-color: #006400;
-    border-bottom: 4px solid #006400;
+    border-bottom-color: #E0FFFF;
+    border-bottom: 4px solid #87CEEB;
 }
 
 

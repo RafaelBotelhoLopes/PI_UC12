@@ -124,7 +124,7 @@
                 
             </select><br><br><br><br>  
   
-            <input type="submit" value="Reservar"/>    
+            <input type="submit" id="btnReservar" value="Reservar"/>    
             
         </form>
         

@@ -44,8 +44,8 @@
             
             <br><br>
             
-            <input type="submit" value="Salvar" />
-            <input type="reset" value="Limpar" />
+            <input type="submit" id="CadSalaSalvar" value="Salvar" />
+            <input type="reset" id="CadSalaLimpar" value="Limpar" />
             
             
         </form>

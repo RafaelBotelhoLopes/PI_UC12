@@ -55,10 +55,11 @@ if (session_status() != PHP_SESSION_ACTIVE) {
     } else {
         ?>
         <form id="frmMenu" action="entrar.php" method="POST" >
-            <input type="text" name="txtLogin" required
+<!--            <label> <i id="ilog" for="txtLogin"></i> </label>-->
+            <input type="text" name="txtLogin" id="txtLogin" required
                    placeholder="Usuário ou E-mail: " />
 
-            <input type="password" name="txtSenha"
+            <input type="password" name="txtSenha" id="txtSenha"
                    placeholder="Senha: " required />
 
             <input type="submit" value="Entrar" />
@@ -96,5 +97,17 @@ if (session_status() != PHP_SESSION_ACTIVE) {
         margin-left: 5px;
 
     }
+    #txtLogin{
+        border-radius: 7px;
+        padding: 10px;
+    }
+    #txtSenha{
+        border-radius: 7px;
+        padding: 10px;
+    }
+/*    #ilog{
+        padding: 12px;
+        background-color: black;
+    }*/
 </style>
 

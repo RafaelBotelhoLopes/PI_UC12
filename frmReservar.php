@@ -93,13 +93,6 @@
                                 conteudo += '<option value="' + i + '" >' + i + '</option>';
                             }
                             selQuantidade.innerHTML = conteudo;
-                            // pegar o Select Materiais
-                            // pegar a posicao selecionada
-                            // pegar o material dentro da lista na posição x-1
-                            // pegar a quantidade do material
-                            // montar um for para preencher os options do select
-                            
-                          //  materiais.innerHTML = material.
                         }
                         
                     </script>

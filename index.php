@@ -46,9 +46,9 @@
                 echo '      <th>Material</th> ';
                 echo '   </tr> ';
                 
-                date_default_timezone_set('America/Sao_Paulo');
-                $date = date('Y-m-d H:i');
-                echo $date;
+//                date_default_timezone_set('America/Sao_Paulo');
+//                $date = date('Y-m-d H:i');
+//                echo $date;
                 
 //                if ($date > Reserva::getDataFinal() || $date < Reserva::getDataInicial()){
 //                        $status = Reserva::getStatus();

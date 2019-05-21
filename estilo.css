@@ -1,6 +1,7 @@
 /*Comum*/
 
 #menu{
+    /*background-image: radial-gradient( #4682B4	, black );*/
     background-color: #4682B4;
     height: 200px;
     /*width: 720px;*/ 
@@ -9,29 +10,28 @@
     margin: 0px;
 
     border-style: solid;
-    border-width: 0px 0px 1px 0px;
+    border-width: 0px 0px 0px 0px;
     align-center: 100%;
 
-    border-width: 0px 20px 0px 0px;
+    border-width: 0px 0px 0px 0px;
     
     
     
 /*<input type="text" name="buscar" value="buscar" size="20" style="background-color: whitesmoke"  width="2px" height="20px"/>*/
 }
 
+
 body{
+/*    background-image: radial-gradient( #6495ED	, black );*/
     background-color: #ADD8E6;  
     margin: 0px ;
     padding: 0px;
     font-family: Verdana;
     font-size: 95%;
+    height: 1000px
 }
 
 .campo{
-
-
-
-
 
     background: white;
 }
@@ -41,13 +41,25 @@ body{
     
 }
 
+#frmReserva{
+    width: 600px;
+  height: 300px;
+  margin: auto;
+  border: 3px solid #4682B4;
+  border-radius: 10px;
+  padding: 50px;
+  background-color: #E0FFFF;
+  color: black;
+  font-size: 20px;
+}
+
 #frmUsuario{
   width: 700px;
   height: 290px;
   margin: auto;
   border: 3px solid #4682B4;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
   background-color: #E0FFFF;
   
 
@@ -60,7 +72,7 @@ body{
   margin: auto;
   border: 3px solid #4682B4;
   border-radius: 10px;
-  padding: 10px;
+  padding: 50px;
   background-color: #E0FFFF; 
 }
 
@@ -111,6 +123,7 @@ th{
     padding: 5px;
     width: 50;
     cursor: pointer;
+    
       
 /*    width: 50;
    

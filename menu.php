@@ -46,7 +46,7 @@ if (session_status() != PHP_SESSION_ACTIVE) {
 
            echo '  <button class="btnMenu" id="ola">Olá, '.$_SESSION['nome'].'</button>';
           }else{
-                echo 'Olá, ' . $_SESSION['nome'];
+                echo '<button class="btnMenu" id="ola"> Olá, ' . $_SESSION['nome'];
                 echo '<a href="sair.php"><button id="sair" class="btnMenu">Sair</button></a>';
           }
        
@@ -71,7 +71,7 @@ if (session_status() != PHP_SESSION_ACTIVE) {
 
     <?php
 }
-                  
+                
 ?>
 
     <br>
@@ -110,4 +110,5 @@ if (session_status() != PHP_SESSION_ACTIVE) {
         background-color: black;
     }*/
 </style>
+
 

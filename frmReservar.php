@@ -36,7 +36,7 @@
         <h1 align="center">Reservar  Sala / Material</h1>
         <br><br><br>
         
-        <form align="center" action="controller/salvarReserva.php?inserir" method="POST" enctype="multipart/form-data" >
+        <form align="center" action="controller/salvarReserva.php?inserir" id="frmReserva" method="POST" enctype="multipart/form-data" >
             
         <label>De: </label>
               <input type="datetime-local" name="dataInicial"><br><br>

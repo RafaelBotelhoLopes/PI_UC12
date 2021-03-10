@@ -1,8 +1,10 @@
 /*Comum*/
 
+
+
 #menu{
     /*background-image: radial-gradient( #4682B4	, black );*/
-    background-color: #4682B4;
+    background-color: #004aad;
     height: 200px;
     /*width: 720px;*/ 
     width: 100%;
@@ -285,15 +287,20 @@ th{
 
 
 #ola{
-   background-color: #4682B4;
+   background-color: #B45F04;
    border-style: solid;
     border-width: 0px 0px 1px 0px;
     align-center: 100%;
-    color: white;
+    color: black;
     font-size: 25px;
 
     border-width: 0px 0px 0px 0px;
    
+}
+
+#titulosite{
+    font-family:Arial, Helvetica, sans-serif;
+    color: darkblue;
 }
 
 .btnExcluir{
@@ -318,13 +325,13 @@ th{
 .btnMenu{       
     /*height: 200;*/
     margin: 70px 7px;
-    border: solid 8px #E0FFFF;
-    border-bottom-color: #87CEEB;
-    border-bottom: 4px solid #87CEEB;
+    border: solid 0px #FBF5EF;
+    border-bottom-color: #FBF5EF;
+    border-bottom: 1px solid #FBF5EF;
     border-radius: 10px;
-    background-color: #E0FFFF;
+    background-color: #FBF5EF;
     color: #000080;
-    font-size: 15px;
+    font-size: 25px;
     cursor: pointer;
     
     padding: 10px;
@@ -346,8 +353,9 @@ th{
 }*/
 
 #foto{
-    margin: 50px 350px;
-    width: 128px;
+    margin: auto 25%;
+    width: 186px;
+    max-width: 100%;
 }
 
 .btnCadastrarUsuario{
@@ -381,12 +389,12 @@ input[type=submit]{
     /*height: 200;*/
     padding: 5px;
     margin: 70px 7px;
-    border: solid 8px #E0FFFF;
+    border: solid 8px #FBF5EF;
     border-radius: 10px;
-    border-bottom-color: #E0FFFF;
-    border-bottom: 4px solid #87CEEB;
+    border-bottom-color: #FBF5EF;
+    border-bottom: 4px solid #FBF5EF;
     /*border-radius: 10px;*/
-    background-color: #E0FFFF;
+    background-color: #FBF5EF;
     color: #000080;
     font-size: 19px;
     cursor: pointer;

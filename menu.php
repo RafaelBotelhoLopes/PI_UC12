@@ -8,7 +8,7 @@ if (session_status() != PHP_SESSION_ACTIVE) {
 
 
 
-    <img id="foto" src="imagens/entrega.jpg" alt="Empresa"  />                   
+    <img id="foto" src="imagens/logosite.jpg" alt="Empresa"  />
 
 
 
@@ -17,45 +17,38 @@ if (session_status() != PHP_SESSION_ACTIVE) {
 
 
     <?php
+    if (isset($_SESSION['logado']) &&
+            $_SESSION['logado'] == TRUE) {
+        ?>
+        <a class="menu" href="frmReservar.php">
+            <button class="btnMenu">Reservar</button></a>
 
-        if( isset($_SESSION['logado']) && 
-                  $_SESSION['logado'] == TRUE ) {
-            
-        
-    ?>
-    <a class="menu" href="frmReservar.php">
-        <button class="btnMenu">Reservar</button></a>
-        
-        
-   <?php
-                  
+
+        <?php
 //          echo '<button id="ola" class="btnMenu"></button></a>';
-    
-          
-         
-          if( isset( $_SESSION['admin']) && $_SESSION['admin'] == TRUE){
 
-   
+
+
+        if (isset($_SESSION['admin']) && $_SESSION['admin'] == TRUE) {
+
+
             echo '  <a class="menu" href="CadMatSala.php"><button class="btnMenu" id="materialsala">Cadastrar Material / Sala</button></a>';
             echo '  <a class="menu" href="frmUsuario.php">
 
                         <button id="cadastrar" class="btnMenu" >Cadastrar</button></a>
                     <a class="menu" href="usuario.php">
                         <button id="usuarios" class="btnMenu" >Usuários</button></a>';
-             echo '<a href="sair.php"><button id="sair" class="btnMenu">Sair</button></a>';
+            echo '<a href="sair.php"><button id="sair" class="btnMenu">Sair</button></a>';
 
-           echo '  <button class="btnMenu" id="ola">Olá, '.$_SESSION['nome'].'</button>';
-          }else{
-                echo '<button class="btnMenu" id="ola"> Olá, ' . $_SESSION['nome'];
-                echo '<a href="sair.php"><button id="sair" class="btnMenu">Sair</button></a>';
-          }
-       
-        
-          
+            echo '  <button class="btnMenu" id="ola">Olá, ' . $_SESSION['nome'] . '</button>';
+        } else {
+            echo '<button class="btnMenu" id="ola"> Olá, ' . $_SESSION['nome'];
+            echo '<a href="sair.php"><button id="sair" class="btnMenu">Sair</button></a>';
+        }
     } else {
         ?>
         <form id="frmMenu" action="entrar.php" method="POST" >
-<!--            <label> <i id="ilog" for="txtLogin"></i> </label>-->
+    <!--            <label> <i id="ilog" for="txtLogin"></i> </label>-->
             <input type="text" name="txtLogin" id="txtLogin" required
                    placeholder="Usuário ou E-mail: " />
 
@@ -63,16 +56,15 @@ if (session_status() != PHP_SESSION_ACTIVE) {
                    placeholder="Senha: " required />
 
             <input type="submit" value="Entrar" />
-        </form> 
+        </form>
 
         <a class="menu" href="frmUsuario.php">
             <button class="btnMenu">Cadastre-se</button></a>
-            
 
-    <?php
-}
-                
-?>
+
+        <?php
+    }
+    ?>
 
     <br>
 
@@ -80,7 +72,7 @@ if (session_status() != PHP_SESSION_ACTIVE) {
 
 <style>
     #frmMenu{
-        
+
         float: left;
     }
     /*    .menu{
@@ -88,27 +80,30 @@ if (session_status() != PHP_SESSION_ACTIVE) {
         }*/
     #menu img{
         float: left;
-        margin-left: 5px;
+        margin-left: 35px;
 
     }
     #menu a{
-        
+
         float: left;
-        margin-left: 5px;
+        margin-left: 100px;
 
     }
     #txtLogin{
         border-radius: 7px;
-        padding: 10px;
+        padding: 20px;
+        font-size: 12px;
+
     }
     #txtSenha{
         border-radius: 7px;
-        padding: 10px;
+        padding: 20px;
+        font-size: 12px;
     }
-/*    #ilog{
-        padding: 12px;
-        background-color: black;
-    }*/
+    /*    #ilog{
+            padding: 12px;
+            background-color: black;
+        }*/
 </style>
 
 

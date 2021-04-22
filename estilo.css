@@ -1,19 +1,23 @@
 /*Comum*/
 
-#menu{
+/*Usos: # para uma classe de itens e "." para id = um item específico*/
+
+menu{
     /*background-image: radial-gradient( #4682B4	, black );*/
-    background-color: #4682B4;
-    height: 200px;
-    /*width: 720px;*/ 
+    background-color: #004aad;
+    height: 240px;
+/*    width: 720px; */
     width: 100%;
     padding: 0px;
-    margin: 0px;
+    margin: 0 0 3px 0;
 
-    border-style: solid;
     border-width: 0px 0px 0px 0px;
     align-center: 100%;
 
     border-width: 0px 0px 0px 0px;
+    
+    display:block;    
+
     
     
     
@@ -21,25 +25,155 @@
 }
 
 
+/*footer.php{
+    align-center: 100%;
+    background-color: #004aad;
+    height: 200px;
+    width: 720px; 
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    align-center: 100%;
+
+    border-width: 0px 0px 0px 0px;
+    
+    position:absolute;
+    bottom:50;
+    width:100%;
+    
+}*/
+
+/* a links*/
+a:link{
+    transition: color .2s ease-in-out;
+    color: #e04f4f;
+}
+
+a:visited{
+    transition: color .2s ease-in-out;
+    color: #555;
+}
+
+a:hover{
+    text-decoration: underline; 
+	color: #e7e7e7;
+}
+
+a:active{
+    text-decoration: none;
+    color: #333;
+}
+
+a{
+    text-decoration: none;
+    background-color: transparent;
+    list-style: none;
+    margin: 0 0 0.45em;
+    
+    
+}
+
+li{
+    text-align: -webkit-match-parent;
+}
+
+ul li:before {
+    
+display: inline;
+float: left;
+margin-left: -18px;
+font-weight:700;
+color:darkgreen;
+font-size:20px;
+margin-top:3.5px
+}
+
+.menufooter{
+          color: #b8eaff;
+          
+          
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 1.1;
+          font-family: "Founders Grotesk Med", sans-serif;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          margin-left: 10px;
+          
+          
+    
+}
+
+/*#footercenter{
+    text-align: center;
+}*/
+
+#politica{
+    margin: 20px 30px 100px 20px;
+    text-align: justify;
+}
+
+#CadMatSala{
+     margin: 300px 0px;
+    border: solid 8px #E0FFFF;
+    border-bottom-color: #87CEEB;
+    border-bottom: 4px solid #87CEEB;
+    border-radius: 10px;
+    background-color: #E0FFFF;
+    color: #000080;
+    font-size: 70px;
+    cursor: pointer;
+    padding: 5px;
+    width: 50;
+    cursor: pointer;
+}
+
+
+
+
+footer{
+    
+    background-color: #2a2a2a;
+    
+    position: absolute;
+    padding: auto;
+    margin: auto;
+    bottom:50;
+    width:100%;
+    width: 100%;/*largura do elemento*/
+    height: auto;/*altura do elemento*/
+ 
+    
+    
+
+    
+    
+    
+    
+/*<input type="text" name="buscar" value="buscar" size="20" style="background-color: whitesmoke"  width="2px" height="20px"/>*/
+}
+
 body{
 /*    background-image: radial-gradient( #6495ED	, black );*/
     background-color: #ADD8E6;  
-    margin: 0px ;
-    padding: 0px;
+    margin: auto; 
+    margin-bottom: 20px;
     font-family: Verdana;
-    font-size: 95%;
-    height: 1000px
+    font-size: 16px;
+    height: 1px;
 }
+
+
 
 .campo{
 
     background: white;
 }
 
-#frmMenu{
 
-    
-}
 
 #frmReserva{
     width: 600px;
@@ -54,12 +188,13 @@ body{
 }
 
 #frmUsuario{
-  width: 700px;
-  height: 290px;
+  font-size: 20px;
+  width: 500px;
+  height: 420px;
   margin: auto;
   border: 3px solid #4682B4;
   border-radius: 10px;
-  padding: 20px;
+  padding: 50px;
   background-color: #E0FFFF;
   
 
@@ -67,7 +202,7 @@ body{
 }
 
 .cadMaterialSala{
-     width: 700px;
+  width: 700px;
   height: 200px;
   margin: auto;
   border: 3px solid #4682B4;
@@ -285,15 +420,28 @@ th{
 
 
 #ola{
-   background-color: #4682B4;
-   border-style: solid;
-    border-width: 0px 0px 1px 0px;
-    align-center: 100%;
-    color: white;
-    font-size: 25px;
-
-    border-width: 0px 0px 0px 0px;
    
+    margin-left: 40px;
+    margin-top: 60px;
+    margin-right: 50px;
+    padding: 1px;
+    
+    font-family: caviar dreams;
+    text-align: right;
+    
+    color: white;
+    font-size: 30px;
+
+    
+   
+}
+
+#titulosite{
+    font-family: caviar dreams;
+    text-align: center;
+    color: darkblue;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
 .btnExcluir{
@@ -315,21 +463,188 @@ th{
 }
 
 
-.btnMenu{       
-    /*height: 200;*/
-    margin: 70px 7px;
-    border: solid 8px #E0FFFF;
+.btnMenu{   
+
+/*    width: 50;
+    height: 200;*/
+    padding: 6px;
+    
+    margin-top: 40px;
+    margin-left: 30px;
+    
+    
+    
+    
+    border: solid 5px #87CEEB;
+    border-radius: 10px;
+    
+    
+    background-color: #87CEEB;
+    color: black;
+    
+    font-size: 20px;
+    cursor: pointer;    
+/*    height: 40px;
+    width: 100px;
+     
+    margin-left: 500px;
+    margin-top: 20px;
+    font-size: 15px;
+    border: solid 0px #FBF5EF;
+    
+    
+    
+    color: #000080;
+    cursor: pointer;
+    
+    padding: 10px;*/
+      
+}
+
+.CadMatSala{
+        padding: 6px;
+    
+    margin-top: 40px;
+    
+    
+    margin-left: 350px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+
+    
+    
+    
+    
+    border: solid 5px #87CEEB;
+    border-radius: 10px;
+    
+    
+    background-color: #87CEEB;
+    color: black;
+    
+    font-size: 20px;
+    cursor: pointer;  
+}
+/*
+#btnInicio{
+
+    
+    position: inherit;
+    margin-left: 40px;
+    margin-top: 50px;
+    width: 50;
+    height: 200;
+    padding: 5px;
+    border: solid 8px #87CEEB;
+    border-radius: 10px;
     border-bottom-color: #87CEEB;
     border-bottom: 4px solid #87CEEB;
     border-radius: 10px;
-    background-color: #E0FFFF;
-    color: #000080;
-    font-size: 15px;
+    background-color: #87CEEB;
+    color: black;
+    font-size: 20px;
     cursor: pointer;
     
-    padding: 10px;
-      
 }
+
+#btnQuemsomos{
+    align-content: center;
+    width: 50;
+    height: 200;
+    padding: 5px;
+    margin: 20px 7px;
+        margin-top: 20px;
+
+    border: solid 8px #87CEEB;
+    border-radius: 10px;
+    border-bottom-color: #87CEEB;
+    border-bottom: 4px solid #87CEEB;
+    border-radius: 10px;
+    background-color: #87CEEB;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#btnCadastrese{
+    width: 50;
+    height: 200;
+    padding: 5px;
+    
+    margin-top: 20px;
+    
+    border: solid 8px #87CEEB;
+    border-radius: 10px;
+    border-bottom-color: #87CEEB;
+    border-bottom: 4px solid #87CEEB;
+    border-radius: 10px;
+    
+    background-color: #87CEEB;
+    color: black;
+    
+    font-size: 20px;
+    cursor: pointer;
+}*/
+
+.login{
+align-content: center; 
+margin: 1px;
+
+}
+
+#subirTopo {
+text-decoration: none;
+background: rgba(30,156,161,.9);
+bottom: 30px;
+right: 30px;
+color: #fff;
+text-align: center;
+cursor: pointer;
+padding: 15px;
+font-size: 15px;
+font-weight: bold;
+text-transform: uppercase;
+position: fixed;
+border: 0;
+font-family: sans-serif;
+opacity: .8;
+}
+
+#subirTopo:hover {
+opacity:1;
+}       
+
+
+
+
+
+
+/*menu #txtLogin{
+    
+}
+
+menu #txtSenha{
+    
+}
+
+#btnEntrar{
+    height: 40px;
+    width: 100px;
+    margin: auto; 
+    margin-left: 500px;
+    margin-top: 20px;
+    font-size: 15px;
+    border: solid 0px #FBF5EF;
+    
+    
+    
+    color: #000080;
+    cursor: pointer;
+    
+    padding: 1px;
+}*/
+
+
 
 /*.ola{
     margin: 70px 7px;
@@ -345,9 +660,25 @@ th{
     padding: 10px;
 }*/
 
-#foto{
-    margin: 50px 350px;
-    width: 128px;
+#fotomenu{
+    width: 120px;
+    height: 120px;
+    margin-left: 40px;
+
+    
+    border-radius: 20px;
+  
+}
+
+#fotofooter{
+    
+    width: 120px;
+    height: 120px;
+    margin-left: 40px;
+    margin-top: 40px;
+    
+    border-radius: 20px;
+    
 }
 
 .btnCadastrarUsuario{
@@ -377,27 +708,29 @@ th{
 }*/
 
 input[type=submit]{
-    width: 50;
-    /*height: 200;*/
+    
+    margin: 8px;
+/*    width: 50;
+    height: 200;*/
+
     padding: 5px;
-    margin: 70px 7px;
-    border: solid 8px #E0FFFF;
+    border: solid 8px #87CEEB;
     border-radius: 10px;
-    border-bottom-color: #E0FFFF;
+    border-bottom-color: #87CEEB;
     border-bottom: 4px solid #87CEEB;
-    /*border-radius: 10px;*/
-    background-color: #E0FFFF;
-    color: #000080;
-    font-size: 19px;
+    border-radius: 10px;
+    background-color: #87CEEB;
+    color: black;
+    font-size: 20px;
     cursor: pointer;
 }
 input[type=submit]:hover{
-    padding: 7px;
+    align-content: center;
+    padding: 14px;
     background-color: #E0FFFF;
-    border: solid 8px #E0FFFF;
-    border-radius: 10px;
+    border: solid 1px #E0FFFF;
     border-bottom-color: #E0FFFF;
-    border-bottom: 4px solid #87CEEB;
+    border-bottom: 1px solid #87CEEB;
 }
 
 

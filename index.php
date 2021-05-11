@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <title>Aluga Já</title>
         <link href="estilo.css" rel="stylesheet" type="text/css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 
@@ -14,6 +14,7 @@
     require_once 'menu.php';
     ?>
     <body>
+
 
 
         <div style="margin-bottom: 200px;">
@@ -48,6 +49,7 @@
                 echo '      <th>Material</th> ';
                 echo '   </tr> ';
 
+
 //                date_default_timezone_set('America/Sao_Paulo');
 //                $date = date('Y-m-d H:i');
 //                echo $date;
@@ -57,9 +59,11 @@
 //                    }else{
 //                        $status = 1;
 //                    }
+
                 $cont = 0;
                 foreach ($lista as $reserva) {
                     $cont ++;
+
 
 
 //                        if( $cont == 2 ){
@@ -71,6 +75,7 @@
 //                            echo '1 - '.($reserva->getDataFinal() - $date);
 //                        }
 //                    };
+
 
 
                     $data = new DateTime($reserva->getDataFinal());
@@ -95,6 +100,7 @@
                     }
                 }
                 echo '</table>';
+
 
 //                 echo '<table border="1" class="tb">';
 //                echo '   <tr> ';

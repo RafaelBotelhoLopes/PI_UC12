@@ -1,5 +1,6 @@
 /*Comum*/
 
+
 /*Usos: # para uma classe de itens e "." para id = um item específico*/
 
 menu{
@@ -28,6 +29,7 @@ menu{
 /*footer.php{
     align-center: 100%;
     background-color: #004aad;
+
     height: 200px;
     width: 720px; 
     width: 100%;
@@ -427,6 +429,7 @@ th{
 
 
 #ola{
+
    
     margin-left: 40px;
     margin-top: 60px;
@@ -439,16 +442,19 @@ th{
     color: white;
     font-size: 30px;
 
+
     
    
 }
 
 #titulosite{
+
     font-family: caviar dreams;
     text-align: center;
     color: darkblue;
     font-size: 40px;
     margin-bottom: 20px;
+
 }
 
 .btnExcluir{
@@ -468,6 +474,7 @@ th{
     font-size: 20px;
     padding: 5px;
 }
+
 
 
 .btnMenu{   
@@ -502,6 +509,7 @@ th{
     
     
     color: #000080;
+
     cursor: pointer;
     
     padding: 10px;*/
@@ -667,6 +675,7 @@ menu #txtSenha{
     padding: 10px;
 }*/
 
+
 #fotomenu{
     width: 120px;
     height: 120px;
@@ -686,6 +695,7 @@ menu #txtSenha{
     
     border-radius: 20px;
     
+
 }
 
 .btnCadastrarUsuario{
@@ -721,6 +731,7 @@ input[type=submit]{
     height: 200;*/
 
     padding: 5px;
+
     border: solid 8px #87CEEB;
     border-radius: 10px;
     border-bottom-color: #87CEEB;
@@ -729,6 +740,7 @@ input[type=submit]{
     background-color: #87CEEB;
     color: black;
     font-size: 20px;
+
     cursor: pointer;
 }
 input[type=submit]:hover{

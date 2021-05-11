@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <?php
-
-    if(session_status() != PHP_SESSION_ACTIVE ){
-        session_start();
-    }
-    require_once 'menu.php';
+if (session_status() != PHP_SESSION_ACTIVE) {
+    session_start();
+}
+require_once 'menu.php';
 ?>
 
 
@@ -16,8 +15,13 @@
 
     </head>
     <body>
-        <a href="frmMaterial.php"><button  id="IdCadMat">Cadastrar Material</button></a>
+        <h1 id="titulosite">Cadastrar Material/Sala</h1>
+        <a href="frmMaterial.php"><button  class="CadMatSala" style="">Cadastrar Material</button></a>
 
-<a href="frmSala.php"><button id="IdCadSala" >Cadastrar Sala</button></a>
-</body>
+        <a href="frmSala.php"><button class="CadMatSala" >Cadastrar Sala</button></a>
+
+        <?php
+        require_once 'footer.php';
+        ?>
+    </body>
 </html>

@@ -141,6 +141,13 @@ footer{
     position: absolute;
     padding: auto;
     margin: auto;
+/*    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center; TENTAR ESSE CÒDIGO PARA VER SE RODA O FOOTER FIXO*/
     bottom:50;
     width:100%;
     width: 100%;/*largura do elemento*/

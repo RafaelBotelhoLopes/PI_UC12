@@ -51,27 +51,11 @@ class Conexao {
 //            return NULL;
 //        }
 //    }
-//    private static function abrir() {
-//        $banco = "m171_04_projeto_integrador_prime";
-//        $local = "localhost";
-//        $usuario = "root";
-//        $senha = "";
-//
-//        $conn = mysqli_connect($local, $usuario, $senha, $banco);
-//
-//        if ($conn) {
-//            return $conn;
-//        } else {
-//            return NULL;
-//        }
-//    }
-
-
     private static function abrir() {
-        $banco = "heroku_04af3916c2cca7f";
-        $local = "us-cdbr-east-03.cleardb.com";
-        $usuario = "b2d140a56843a6";
-        $senha = "35a4d687";
+        $banco = "WBny00evef";
+        $local = "remotemysql.com";
+        $usuario = "WBny00evef";
+        $senha = "IvghJRcWAv";
 
         $conn = mysqli_connect($local, $usuario, $senha, $banco);
 

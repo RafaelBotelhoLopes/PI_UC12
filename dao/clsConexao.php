@@ -66,6 +66,22 @@ class Conexao {
 //        }
 //    }
 
+
+    private static function abrir() {
+        $banco = "heroku_04af3916c2cca7f";
+        $local = "us-cdbr-east-03.cleardb.com";
+        $usuario = "b2d140a56843a6";
+        $senha = "35a4d687";
+
+        $conn = mysqli_connect($local, $usuario, $senha, $banco);
+
+        if ($conn) {
+            return $conn;
+        } else {
+            return NULL;
+        }
+    }
+
     private static function fechar($conn) {
         mysqli_close($conn);
     }

@@ -36,24 +36,21 @@ class Conexao {
 //            return NULL;
 //        }
 //    }
-
-
-    private static function abrir() {
-        $banco = "id16807126_alugajaam";
-        $local = "localhost";
-        $usuario = "id16807126_alugaja";
-        $senha = "A246890zH6q8n0c$";
-        //analu270397
-
-        $conn = mysqli_connect($local, $usuario, $senha, $banco);
-
-        if ($conn) {
-            return $conn;
-        } else {
-            return NULL;
-        }
-    }
-
+//    private static function abrir() {
+//        $banco = "id16807126_alugajaam";
+//        $local = "localhost";
+//        $usuario = "id16807126_alugaja";
+//        $senha = "A246890zH6q8n0c$";
+//        //analu270397
+//
+//        $conn = mysqli_connect($local, $usuario, $senha, $banco);
+//
+//        if ($conn) {
+//            return $conn;
+//        } else {
+//            return NULL;
+//        }
+//    }
 //    private static function abrir() {
 //        $banco = "m171_04_projeto_integrador_prime";
 //        $local = "localhost";

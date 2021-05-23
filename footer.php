@@ -23,17 +23,17 @@
 
                     <nav aria-labelledby="block-footerright-menu" style="margin-top: -105px; margin-left: 200px; margin-bottom: 100px;" id="block-footerright" class="block block-menu navigation menu--footer-right" >
 
-                        <div id="block-footerright-menu" class="menufooter" style="font-style: oblique; text-indent: 7%; font: bold;">Menu</div>
+                        <div id="block-footerright-menu" class="menufooter" style="font-style: normal; text-indent: 7%; font: bold; margin-left: 23px">Menu</div>
 
 
 
                         <ul data-region="footer" class="menufooter" style="">
 
                             <p>
-                                <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" aria-label="Contact Link 1">Contact Us</a>
+                                <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" aria-label="Contact Link 1" style="margin-left: 3%">Contact Us</a>
                             </p>
 
-                            <a href="biblioteca.php" data-drupal-link-system-path="search" target="_blank" aria-label="Sitemap Search link">Biblioteca</a>
+                            <a href="biblioteca.php" data-drupal-link-system-path="search" aria-label="Sitemap Search link">Material de Estudo</a>
 
 
                         </ul>
@@ -44,17 +44,17 @@
 
                     <nav aria-labelledby="block-footerright-menu" style="text-align-last: center; margin-top: -200px; margin-left: 120px; margin-bottom: 100px" id="block-footerright" class="block block-menu navigation menu--footer-right" ">
 
-                        <div id="block-footerright-menu" class="menufooter" style="text-indent: 5%; font-style: oblique;">Atendimento</div>
+                        <div id="block-footerright-menu" class="menufooter" style="text-indent: 5%; font-style:  normal;">Atendimento</div>
 
 
 
                         <ul data-region="footer" class="menufooter" style="">
 
 
-                            <p><a href="mailto:alugajanegocios?subject=Ajuda" >Email: alugajanegocios@gmail.com</a></p>
+                            <p><a href="mailto:alugajanegocios?subject=Ajuda" >Email: negociosalugaja@gmail.com</a></p>
 
 
-                            <p style="color: white">Celular: (51)3231-4572</p>
+                            <p style="color: white">Celular: (51)3238-4272</p>
 
 
                         </ul>
@@ -67,22 +67,22 @@
 
                     <nav aria-labelledby="block-footersociallinks-menu" style="text-align-last: center; margin-top: -195px; margin-left: 990px; margin-bottom: 62px" id="block-footersociallinks" class="block block-menu navigation menu--footer-social-links">
 
-                        <div  id="block-footersociallinks-menu" class="menufooter" style="font-style: oblique; text-indent: 11%; font-style: bold">Social Links</div>
+                        <div  id="block-footersociallinks-menu" class="menufooter" style="font-style: normal; text-indent: 11%; font-style: bold; margin-left: 50%">Social Links</div>
 
 
 
-                        <ul data-region="footer" class="menufooter">
+                        <ul data-region="footer" class="menufooter" style="margin-left: 50%">
                             <p>
-                                <a href="https://www.facebook.com/" class="fab fa-facebook-f" target="_blank">Facebook</a>
+                                <a href="https://www.facebook.com/Aluga-J%C3%A1-Negocios-102675225350396" class="fab fa-facebook-f" target="_blank">Facebook</a>
                             </p>
                             <p>
-                                <a href="https://twitter.com/" class="fab fa-twitter" target="_blank">Twitter</a>
+                                <a href="https://twitter.com/JaAluga" class="fab fa-twitter" target="_blank">Twitter</a>
                             </p>
                             <p>
-                                <a href="https://www.instagram.com/" class="fab fa-instagram" target="_blank">Instagram</a>
+                                <a href="https://www.instagram.com/alugajanegocios/" class="fab fa-instagram" target="_blank">Instagram</a>
                             </p>
                             <p>
-                                <a href="https://www.youtube.com/channel/UCU5JicSrEM5A63jkJ2QvGYw" class="fab fa-youtube" target="_blank">YouTube</a>
+                                <a href="https://www.youtube.com/c/descomplica/videos" class="fab fa-youtube" target="_blank">YouTube</a>
                             </p>
                         </ul>
 
@@ -112,9 +112,9 @@
             </div>
             <br>
             <div class="col col-desktop-3 social col-4" style="vertical-align: middle; margin-left: 10px;">
-                <a href="https://www.facebook.com/" class="fab fa-facebook-f" target="_blank"><img src="imagens/social-facebook.png" alt=""></a>
-                <a href="https://twitter.com/" class="fab fa-twitter" target="_blank"><img src="imagens/social-twitter.png" alt=""></a>
-                <a href="https://www.youtube.com/channel/UCU5JicSrEM5A63jkJ2QvGYw" class="fab fa-youtube" target="_blank"><img src="imagens/social-youtube.png" alt=""></a>
+                <a href="https://www.facebook.com/Aluga-J%C3%A1-Negocios-102675225350396" class="fab fa-facebook-f" target="_blank"><img src="imagens/social-facebook.png" alt=""></a>
+                <a href="https://twitter.com/JaAluga" class="fab fa-twitter" target="_blank"><img src="imagens/social-twitter.png" alt=""></a>
+                <a href="https://www.youtube.com/c/descomplica/videos" class="fab fa-youtube" target="_blank"><img src="imagens/social-youtube.png" alt=""></a>
 
             </div>
 

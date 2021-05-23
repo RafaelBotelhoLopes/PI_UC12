@@ -20,7 +20,7 @@
         <div style="margin-bottom: 200px;">
 
 
-            <h1 align="center" id="titulosite" style="margin-bottom: 150px;"> Aluga Já</h1>
+            <h1 align="center" id="titulosite" style="margin-bottom: 150px">Aluga Já - Colégio Farroupilha</h1>
 
             <?php
             include_once './dao/clsReservaDAO.php';

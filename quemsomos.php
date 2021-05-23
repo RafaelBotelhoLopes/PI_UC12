@@ -24,7 +24,7 @@
 
             <div class="row" style="margin-left: 20px; margin-top: 100px;">
                 <div class="col col-desktop-12 title">
-                    <h1>Alta produtividade em tempo real</h1>
+                    <h1>Organização e Melhorias para o Ensino</h1>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
                     <div class="col col-desktop-8">
                         <h2>Quem somos</h2>
                         <p>Somos uma Empresa especializada em hospedagem e criação de sites para aluguel
-                            e compra de materiais e salas</p>
+                            e compra de materiais e salas.</p>
                     </div>
                 </div>
             </div>
@@ -50,17 +50,18 @@
                     <div class="col col-desktop-4">
                         <img src="images/quem-somos/quem-somos_02.jpg" alt="">
                         <h2>Missão</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing. Ut enim ad minim, nostrud exercitation ullamco laboris nisi ut aliquip ex commodo.</p>
+                        <p>Aluga Já tem como missão auxiliar escolas e faculdades na
+                            locação de materiais e salas para professores, alunos e administradores.</p>
                     </div>
                     <div class="col col-desktop-4">
                         <img src="images/quem-somos/quem-somos_03.jpg" alt="">
                         <h2>Visão</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing. Ut enim ad minim, nostrud exercitation ullamco laboris nisi ut aliquip ex commodo.</p>
+                        <p>Aluga Já busca facilitar, por meios virtuais, a organização de escolas com aluguel de salas e materias e, assim, melhorar o ensino em escolas e faculdades.</p>
                     </div>
                     <div class="col col-desktop-4">
                         <img src="images/quem-somos/quem-somos_04.jpg" alt="">
                         <h2>Valores</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing. Ut enim ad minim, nostrud exercitation ullamco laboris nisi ut aliquip ex commodo.</p>
+                        <p>Buscamos trazer excelência no ensino e auxiliar o ensino.</p>
                     </div>
                 </div>
             </div>

@@ -13,7 +13,7 @@ if (session_status() != PHP_SESSION_ACTIVE) {
 
         <a href="index.php"><button  class="btnMenu">Início</button></a>
         <a href="quemsomos.php"><button   class="btnMenu">Quem somos</button></a>
-        <a href="frmUsuario.php"><button  class="btnMenu">Cadastre-se</button></a>
+        <a href="frmUsuario.php"><button   class="btnMenu">Cadastro</button></a>
 
 
 
@@ -24,6 +24,9 @@ if (session_status() != PHP_SESSION_ACTIVE) {
             ?>
             <a class="menu1" href="frmReservar.php">
                 <button class="btnMenu">Reservar</button></a>
+
+            <a class="menu1" href="biblioteca.php">
+                <button class="btnMenu">Material de Estudo</button></a>
 
             <?php
 //          echo '<button id="ola" class="btnMenu"></button></a>';

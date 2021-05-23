@@ -13,7 +13,7 @@ if (session_status() != PHP_SESSION_ACTIVE) {
 
         <a href="index.php"><button  class="btnMenu">Início</button></a>
         <a href="quemsomos.php"><button   class="btnMenu">Quem somos</button></a>
-        <a href="frmUsuario.php"><button   class="btnMenu">Cadastro</button></a>
+
 
 
 

@@ -20,7 +20,15 @@
         <div style="margin-bottom: 200px;">
 
 
-            <h1 align="center" id="titulosite" style="margin-bottom: 150px">Aluga Já - Colégio Farroupilha</h1>
+            <h1 align="center" id="titulosite" style="margin-bottom: 150px">ALUGA JÁ - Colégio Farroupilha</h1>
+
+
+            <p  style="text-align: center; font-weight: bold; margin-top: -100px; font-size: 12px;">User: rafael</p>
+            <p  style="text-align: center; font-weight: bold; font-size: 12px;">Password: 123</p>
+
+            <p  style="text-align: center; font-weight: bold; font-size: 12px;">User: admin</p>
+            <p  style="text-align: center; font-weight: bold; margin-bottom: 100px; font-size: 12px;">Password: 123</p>
+
 
             <?php
             include_once './dao/clsReservaDAO.php';

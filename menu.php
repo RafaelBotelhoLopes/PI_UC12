@@ -47,11 +47,14 @@ if (session_status() != PHP_SESSION_ACTIVE) {
 
                 echo '<p id="ola">Olá, ' . $_SESSION['nome'] . '</p>';
             } else {
+
                 echo '<p id="ola"> Olá, ' . $_SESSION['nome'];
+
                 echo '<a href="sair.php"><button id="sair" class="btnMenu" style="margin-left: 30px; ">Sair</button></a>';
             }
         } else {
             ?>
+
             <form class="login" action="entrar.php" method="POST" >
                     <!--            <label> <i id="ilog" for="txtLogin"></i> </label>-->
                 <input  type="text" name="txtLogin" id="txtLogin" style="margin-left: 60%; margin-bottom: 90%" required

@@ -209,6 +209,7 @@ body{
     
 }
 
+
 .cadMaterialSala{
   width: 700px;
   height: 200px;
@@ -453,6 +454,7 @@ th{
     text-align: center;
     color: darkblue;
     font-size: 40px;
+    
     margin-bottom: 20px;
 
 }
@@ -474,8 +476,6 @@ th{
     font-size: 20px;
     padding: 5px;
 }
-
-
 
 .btnMenu{   
 

@@ -8,21 +8,20 @@
  */
 class Conexao {
 
-    private static function abrir() {
-        $banco = "m171_04_projeto_integrador_prime";
-        $local = "localhost";
-        $usuario = "root";
-        $senha = "";
-
-        $conn = mysqli_connect($local, $usuario, $senha, $banco);
-
-        if ($conn) {
-            return $conn;
-        } else {
-            return NULL;
-        }
-    }
-
+//    private static function abrir() {
+//        $banco = "m171_04_projeto_integrador_prime";
+//        $local = "localhost";
+//        $usuario = "root";
+//        $senha = "";
+//
+//        $conn = mysqli_connect($local, $usuario, $senha, $banco);
+//
+//        if ($conn) {
+//            return $conn;
+//        } else {
+//            return NULL;
+//        }
+//    }
 //    private static function abrir() {
 //        $banco = "id16819099_projetoalugaja";
 //        $local = "localhost";
@@ -53,20 +52,20 @@ class Conexao {
 //        }
 //    }
     //PARA O HEROKU
-//    private static function abrir() {
-//        $banco = "WBny00evef";
-//        $local = "remotemysql.com";
-//        $usuario = "WBny00evef";
-//        $senha = "IvghJRcWAv";
-//
-//        $conn = mysqli_connect($local, $usuario, $senha, $banco);
-//
-//        if ($conn) {
-//            return $conn;
-//        } else {
-//            return NULL;
-//        }
-//    }
+    private static function abrir() {
+        $banco = "WBny00evef";
+        $local = "remotemysql.com";
+        $usuario = "WBny00evef";
+        $senha = "IvghJRcWAv";
+
+        $conn = mysqli_connect($local, $usuario, $senha, $banco);
+
+        if ($conn) {
+            return $conn;
+        } else {
+            return NULL;
+        }
+    }
 
     private static function fechar($conn) {
         mysqli_close($conn);

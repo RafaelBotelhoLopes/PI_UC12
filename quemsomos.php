@@ -38,8 +38,10 @@
                     </div>
                     <div class="col col-desktop-8">
                         <h2>Quem somos</h2>
-                        <p>Somos uma Empresa especializada em hospedagem e criação de sites para aluguel
-                            e compra de materiais e salas.</p>
+                        <p>Somos uma empresa especializada em hospedagem e criação de sites como ferramentas para
+                            auxiliar na organização de aluguel e compra de material escolar, bem como para uso de salas de aula.
+                            Oferecemos recursos para as instituições que desejarem serem nossas parceiras,
+                            trazendo excelência para o ensino e facilitando uma parte do dia a dia dessas escolas e universidades.</p>
                     </div>
                 </div>
             </div>
@@ -50,18 +52,20 @@
                     <div class="col col-desktop-4">
                         <img src="images/quem-somos/quem-somos_02.jpg" alt="">
                         <h2>Missão</h2>
-                        <p>Aluga Já tem como missão auxiliar escolas e faculdades na
-                            locação de materiais e salas para professores, alunos e administradores.</p>
+                        <p>Aluga Já tem como missão auxiliar escolas e universidades na locação de materiais e de salas para professores,
+                            alunos e administradores.</p>
                     </div>
                     <div class="col col-desktop-4">
                         <img src="images/quem-somos/quem-somos_03.jpg" alt="">
                         <h2>Visão</h2>
-                        <p>Aluga Já busca facilitar, por meios virtuais, a organização de escolas com aluguel de salas e materias e, assim, melhorar o ensino em escolas e faculdades.</p>
+                        <p>Ser referência nesse serviço, facilitando, por meios online, a organização de escolas e universidades
+                            na questão de aluguel de salas e
+                            materias e, assim, melhorar o ensino nas instituições parceiras.</p>
                     </div>
                     <div class="col col-desktop-4">
                         <img src="images/quem-somos/quem-somos_04.jpg" alt="">
                         <h2>Valores</h2>
-                        <p>Buscamos trazer excelência no ensino e auxiliar o ensino.</p>
+                        <p>Acessibilidade, inovação, modernidade, colaboração, qualidade.</p>
                     </div>
                 </div>
             </div>

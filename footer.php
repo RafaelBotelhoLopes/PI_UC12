@@ -111,12 +111,7 @@
 
             </div>
             <br>
-            <div class="col col-desktop-3 social col-4" style="vertical-align: middle; margin-left: 10px;">
-                <a href="https://www.facebook.com/Aluga-J%C3%A1-Negocios-102675225350396" class="fab fa-facebook-f" target="_blank"><img src="imagens/social-facebook.png" alt=""></a>
-                <a href="https://twitter.com/JaAluga" class="fab fa-twitter" target="_blank"><img src="imagens/social-twitter.png" alt=""></a>
-                <a href="https://www.youtube.com/c/descomplica/videos" class="fab fa-youtube" target="_blank"><img src="imagens/social-youtube.png" alt=""></a>
 
-            </div>
 
             <div class="field field--name-field-trademark-address field--type-string field--label-hidden field__items" style="font-size: 10px; margin-left: 10px; margin-top: 10px; color: #e7e7e7">
                 <div class="field__item" >©2021 Aluga Já</div>

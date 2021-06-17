@@ -22,14 +22,14 @@
             <h1 align="center" id="titulosite">Quem somos?</h1>
 
 
-            <div class="row" style="margin-left: 20px; margin-top: 100px;">
+            <div class="row" style="margin-left: 50px; margin-top: 100px;">
                 <div class="col col-desktop-12 title">
                     <h1>Organização e Melhorias para o Ensino</h1>
                 </div>
             </div>
         </div>
     </header>
-    <main style="margin-left: 20px; margin-bottom: 100px;">
+    <main style="margin-left: 40px; margin-bottom: 100px;">
         <section class="section" id="intro">
             <div class="container">
                 <div class="row">

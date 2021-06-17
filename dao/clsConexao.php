@@ -51,6 +51,7 @@ class Conexao {
 //            return NULL;
 //        }
 //    }
+//
     //PARA O HEROKU
     private static function abrir() {
         $banco = "WBny00evef";
